@@ -1,0 +1,22 @@
+.container {
+    overflow-x: hidden;
+}
+.services {
+    height: 596px;
+    background: var(--mega-law-dark);
+}
+.card {
+    border: 0.5px solid #7070703E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+.card p{
+    font-size: 14px;
+}
+
+.btn {
+    background: var(--mega-law-tomato) !important;
+    border-radius: 0 !important;    
+  }

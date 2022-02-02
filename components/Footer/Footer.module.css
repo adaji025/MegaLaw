@@ -1,0 +1,24 @@
+.footer {
+    background: var(--mega-law-dark);
+}
+
+.logo {
+    font-size: 47px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.law {
+    color: var(--mega-law-tomato);
+}
+.label {
+    font-size: 24px;
+}
+.input_text {
+    height: 55px;
+}
+@media (max-width: 567px) {
+    .logo {
+        font-size: 30px;       
+    }
+}

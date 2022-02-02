@@ -1,0 +1,23 @@
+.logo {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.mega {
+  font-size: 38px;
+}
+.law {
+  font-size: 38px;
+  color: var(--mega-law-tomato);
+}
+.partners {
+  letter-spacing: 0.9rem;
+  line-height: 0.4;
+  font-weight: 200 !important;
+}
+.btn {
+  background: var(--mega-law-tomato) !important;
+  border-radius: 0 !important;
+  width: 160px;
+  height: 60px;
+}
