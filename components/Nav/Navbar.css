@@ -47,7 +47,9 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
-  
+  .navLink:hover {
+    color: var(--mega-law-tomato);
+  }
   .nav-link:hover {
     background-color: #6d76f7;
     border-radius: 4px;
@@ -61,6 +63,13 @@
     border-radius: 0 !important;
     width: 260px;
     height: 60px;
+  }
+
+  .megaLight {
+    color: #fff;
+  }
+  .megaDark {
+    color: var(--mega-law-dark);
   }
 @media (max-width: 992px) {
     .navbarItems {
@@ -97,10 +106,12 @@
       }
 
       .navLink {
-        text-align: center;
+        text-align: start;
         width: 100%;
         padding: 2rem;
+        color: var(--mega-law-dark);
         display: table;
+        border-bottom: 1px solid rgb(209, 202, 202);
         margin-left: -20px;
       }
     

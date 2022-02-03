@@ -5,7 +5,7 @@ import Navbar from '../../components/Nav/Navbar'
 const Blog = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar textColor="megaDark"/>
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
           <div className="col-md-6">

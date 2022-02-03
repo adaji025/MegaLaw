@@ -6,7 +6,7 @@ import styles from "./Post.module.css";
 const Post = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar textColor="megaDark"/>
       <div className="container py-5">
         <div className="row">
           <div className="col-xl-11">

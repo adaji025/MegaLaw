@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { MenuItems } from './MenuItems'
 
 
-const Navbar = () => {
+const Navbar = ({textColor}) => {
     const [clicked, setClicked] = useState(false)
 
     const handleClick = () => {
@@ -12,12 +12,16 @@ const Navbar = () => {
 
     const router = useRouter()
 
+    const STYLES = ['megaLight', 'megaDark']
+
+    const checkColor = STYLES.includes(textColor) ? textColor : STYLES[0]
+
   return <div>
       <nav className={` container navbarItems `}>
       <div className={` logo `}>
-              <span className={` text-dark mega`}>Mega</span>
+              <span className={` ${checkColor} mega`}>Mega</span>
               <span className={` law `}>Law</span>
-              <span className={` d-block text-dark partners `}>Partners</span>
+              <span className={` d-block partners ${checkColor}`}>Partners</span>
             </div>
             <div className={`px-1 px-sm-0 menuIcon `} onClick={handleClick}>
                 {
@@ -29,7 +33,7 @@ const Navbar = () => {
                     MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a href={item.url} className={`poppins-medium ${item.cName}`} target={item.target}>
+                                <a href={item.url} className={`poppins-medium ${checkColor} ${item.cName}`} target={item.target}>
                                     {item.title}
                                 </a>
                             </li>
