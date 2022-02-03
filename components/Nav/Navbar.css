@@ -71,6 +71,10 @@
   .megaDark {
     color: var(--mega-law-dark);
   }
+  .bg {
+    background: var(--mega-law-ash) !important;
+    position: fixed;
+  }
 @media (max-width: 992px) {
     .navbarItems {
         height: 120px;
@@ -93,7 +97,7 @@
         height: 560px;
         position: absolute;
         top: 80px;
-        left: -100%;
+        left: -120%;
         opacity: 1;
         transition: all 0.5s ease;
       }
@@ -102,6 +106,7 @@
         left: 0;
         opacity: 1;
         z-index: 10;
+        padding: 10px;
         transition: all 0.5s ease;
       }
 
@@ -112,26 +117,43 @@
         color: var(--mega-law-dark);
         display: table;
         border-bottom: 1px solid rgb(209, 202, 202);
-        margin-left: -20px;
+        /* margin-left: -20px; */
       }
-    
+    ul {
+      padding-inline-start: 0px;
+    }
       .nav-link:hover {
         background: var(--mega-law-tomato);
         border-radius: 0;
       }
-      .navLink-mobile {
-        display: none;
-        text-align: center;
-        width: 100%;
-        padding: 2rem;
-        color: white;
-        background: var(--nissa-green);
-        margin-left: -20px;
-      }
+      
       #__next > div > div.Services_services__ti_Ua > div > nav > button,
       #__next > div > section.Home_heroContainer__jUoc_ > div > nav > button,
       #__next > div > div.About_aboutHero__esVz6 > div > nav > button,
       #__next > div > div:nth-child(1) > nav > button {
         display: none;
       }
+}
+
+@media (max-width: 576px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .navLink-mobile {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+    color: white;
+    background: var(--mega-law-tomato);
+  }
 }
