@@ -9,6 +9,7 @@ import styles from "../styles/Home.module.css";
 import particlesConfig from "../config/ParticleConfig";
 import Particles from "react-tsparticles";
 import { useEffect } from "react";
+import Navbar from "../components/Nav/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -26,12 +27,12 @@ export default function Home() {
       </Head>
 
       <section className={styles.heroContainer}>
-
+      <Navbar />
       
       </section>
-      <div className="d-sm-none">
+      {/* <div className="d-sm-none">
       <Particles params={particlesConfig} id="ts"></Particles>
-      </div>
+      </div> */}
       <section id="practices" className={styles.practices}>
         <Container className="py-5">
           <Row>

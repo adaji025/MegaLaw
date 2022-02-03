@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../../components/Footer/Footer'
+import Navbar from '../../components/Nav/Navbar'
 import styles from "./Services.module.css";
 
 const Services = () => {
@@ -13,7 +14,9 @@ const Services = () => {
       }, [])
   return (
     <div className={styles.container}>
-      <div className={styles.services}></div>
+      <div className={styles.services}>
+        <Navbar />
+      </div>
 
       <div className="container py-5">
         <div className="row justify-content-center">

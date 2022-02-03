@@ -1,10 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
+import Navbar from '../../components/Nav/Navbar'
 import styles from "./Post.module.css";
 
 const Post = () => {
   return (
     <div>
+      <Navbar />
       <div className="container py-5">
         <div className="row">
           <div className="col-xl-11">

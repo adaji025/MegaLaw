@@ -1,11 +1,14 @@
 import React from "react";
 import Footer from '../../components/Footer/Footer'
 import styles from "./About.module.css";
+import Navbar from '../../components/Nav/Navbar'
 
 const About = () => {
   return (
     <div className={styles.hero}>
-      <div className={styles.aboutHero}></div>
+      <div className={styles.aboutHero}>
+        <Navbar />
+      </div>
 
       <div className="container py-5 mt-5">
         <div className="row justify-content-center">

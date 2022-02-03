@@ -1,9 +1,11 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
+import Navbar from '../../components/Nav/Navbar'
 
 const Blog = () => {
   return (
     <div>
+      <Navbar />
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
           <div className="col-md-6">
