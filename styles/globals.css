@@ -64,8 +64,14 @@ a {
 .z-modal {
     z-index: 1000 !important;
 }
+
 @media (min-width:992px) {
     .nmb-2 {
         margin-top: -1.2rem;
+    }
+}
+@media (max-width:992px) {
+    .our-services-height {
+        height: 200px;
     }
 }

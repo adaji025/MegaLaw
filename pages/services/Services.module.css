@@ -5,6 +5,9 @@
     height: 596px;
     background: var(--mega-law-dark);
 }
+.our_services {
+    font-size: 64px;
+}
 .card {
     border: 0.5px solid #7070703E;
     display: flex;
@@ -19,4 +22,26 @@
 .btn {
     background: var(--mega-law-tomato) !important;
     border-radius: 0 !important;    
+  }
+
+  @media (max-width: 992px) {
+      .our_services {
+          font-size: 44px;
+      }
+      .h_200 {
+          height: 300px !important;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+  @media (max-width:768px) {
+    .services {
+        height: 650px;
+        margin-bottom: 12rem;
+    } 
+    .our_services {
+        font-size: 44px;
+    } 
   }
