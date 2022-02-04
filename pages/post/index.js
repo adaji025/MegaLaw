@@ -1,12 +1,15 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import Navbar from '../../components/Nav/Navbar'
+import Navbar from "../../components/Nav/Navbar";
 import styles from "./Post.module.css";
 
 const Post = () => {
+  const router = useRouter();
   return (
     <div>
-      <Navbar textColor="megaDark"/>
+      <Navbar textColor="megaDark" />
       <div className="container py-5">
         <div className="row">
           <div className="col-xl-11">
@@ -61,7 +64,9 @@ const Post = () => {
                 </div>
                 <span className="ms-4">
                   <span className="poppins-bold d-block">Eva Allordia</span>
-                  <span className="poppins-medium opacity-50 fs-16">Associate</span>
+                  <span className="poppins-medium opacity-50 fs-16">
+                    Associate
+                  </span>
                 </span>
               </div>
             </div>
@@ -75,7 +80,7 @@ const Post = () => {
             <div className="col-md-6">
               <h3 className="poppins-bold">More Article </h3>
               <p className="poppins-medium opacity-50">
-              Just a collection of our thoughts on various topics
+                Just a collection of our thoughts on various topics
               </p>
             </div>
           </div>
@@ -94,9 +99,14 @@ const Post = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
-                    Read more <span className="fs-2 ps-2">&#8594;</span>
-                  </a>
+                  <Link href="/post">
+                    <a
+                      className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                      onClick={() => router.push("/post")}
+                    >
+                      Read more <span className="fs-2 ps-2">&#8594;</span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -114,7 +124,10 @@ const Post = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                    onClick={() => router.push("/post")}
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>

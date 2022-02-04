@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from '../../components/Footer/Footer'
 import styles from "./About.module.css";
 import Navbar from '../../components/Nav/Navbar'
+import Contact from "../../components/Contact/Contact";
 
 const About = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
@@ -33,7 +35,7 @@ const About = () => {
               Because Occasionally Circumstances Occur In Which Toil And Pain
               Can
             </p>
-            <button className={`d-block btn text-white ${styles.btn}`}>
+            <button className={`d-block btn text-white ${styles.btn}`} onClick={() => setIsOpen(true)}>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="text-start">
                   <span
@@ -181,6 +183,16 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+        {/* modal */}
+        <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-12">
+            <div>
+              <Contact open={isOpen} close={() => setIsOpen(false)}/>
+            </div>   
           </div>
         </div>
       </div>

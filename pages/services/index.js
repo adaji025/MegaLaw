@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Nav/Navbar'
 import styles from "./Services.module.css";
+import Contact from "../../components/Contact/Contact";
 
 const Services = () => {
     useEffect(() => {
@@ -12,6 +13,8 @@ const Services = () => {
           duration: 1000
         })
       }, [])
+
+      const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.services}>
@@ -108,7 +111,18 @@ const Services = () => {
       </div>
 
       <div className="container text-center py-5">
-          <a href="#" className={`btn text-white poppins-bold px-5 py-3 ${styles.btn}`}>Consult us</a>
+          <a href="#" className={`btn text-white poppins-bold px-5 py-3 ${styles.btn}`} onClick={() => setIsOpen(true)}>Consult us</a>
+      </div>
+
+      {/* modal */}
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-12">
+            <div>
+              <Contact open={isOpen} close={() => setIsOpen(false)}/>
+            </div>   
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

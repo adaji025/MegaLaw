@@ -1,28 +1,29 @@
+import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import Navbar from '../../components/Nav/Navbar'
+import Navbar from "../../components/Nav/Navbar";
 
 const Blog = () => {
+  const router = useRouter()
   return (
     <div>
-      <Navbar textColor="megaDark"/>
+      <Navbar textColor="megaDark" />
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
           <div className="col-md-6">
             <span className="tomato-color opacity-75 poppins-medium">
               FEATURED POST
             </span>
-            <h3 className="poppins-bold pe-lg-5">How to build a world-class business brand</h3>
+            <h3 className="poppins-bold pe-lg-5">
+              How to build a world-class business brand
+            </h3>
             <span className="poppins-regular">
               Apparently we had reached a great height in the atmosphere, for
               the sky was a dead black, and the stars had ceased to twinkle. By
               the same illusion which lifts the horizon of the sea to the level
               of the spectator on a hillside, the sable cloud{" "}
             </span>
-            <a
-              href="#"
-              className="pb-2 tomato-color d-flex align-items-center"
-            >
+            <a href="#" className="pb-2 tomato-color d-flex align-items-center">
               Read more <span className="fs-2 ps-2">&#8594;</span>
             </a>
           </div>
@@ -57,7 +58,10 @@ const Blog = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    onClick={() => router.push('/post')}
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
@@ -77,7 +81,10 @@ const Blog = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    onClick={() => router.push('/post')}
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
@@ -97,7 +104,10 @@ const Blog = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    onClick={() => router.push('/post')}
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
@@ -117,7 +127,10 @@ const Blog = () => {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    onClick={() => router.push('/post')}
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
