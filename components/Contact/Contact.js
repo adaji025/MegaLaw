@@ -10,9 +10,12 @@ const Contact = ({open, close}) => {
         top: '0',
         left: '0',
         transform: 'translate(50%, 25%)',
-        // background: '#fff',
         zIndex: '1000'
       }
+    const MODAL_SIZE = [ 'modal__web', 'modal__mobile']
+     
+
+    
       const OVERLAY_STYLES = {
           position: 'fixed',
           top: 0,
@@ -25,7 +28,7 @@ const Contact = ({open, close}) => {
   return (
     <div>
         <div style={OVERLAY_STYLES}></div>
-      <div className="container py-5 z-modal bg-white" style={MODAL_STYLES}>
+      <div className="container  py-5 z-modal bg-white" style={MODAL_STYLES}>
         <div className="row justify-content-center z-modal">
           <div className="col-md-10">
             <div className="d-flex justify-content-between py-3">

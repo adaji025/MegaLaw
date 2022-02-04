@@ -148,13 +148,13 @@ const Services = () => {
 
       {/* modal */}
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-12">
+        {/* <div className="row justify-content-center">
+          <div className="col-md-12"> */}
             <div>
               <Contact open={isOpen} close={() => setIsOpen(false)} />
             </div>
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
       </div>
       <Footer />
     </div>

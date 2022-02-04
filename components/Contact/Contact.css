@@ -1,0 +1,17 @@
+.modal__web {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75vh;
+    width: 50vw;
+    transform: translate(50%, 25%);
+}
+
+.modal__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 75vh;
+    transform: translate(12%, 25%);
+}
