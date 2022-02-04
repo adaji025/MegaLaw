@@ -28,8 +28,8 @@ const Contact = ({open, close}) => {
   return (
     <div>
         <div style={OVERLAY_STYLES}></div>
-      <div className="container  py-5 z-modal bg-white" style={MODAL_STYLES}>
-        <div className="row justify-content-center z-modal">
+      <div className="container  py-5 z-modal bg-white">
+        <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="d-flex justify-content-between py-3">
               <h3>Talk to us….</h3>

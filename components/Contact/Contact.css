@@ -1,17 +1,21 @@
-.modal__web {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 75vh;
-    width: 50vw;
-    transform: translate(50%, 25%);
+.z-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 50vw;
+  transform: translate(45%, 15%);
+  z-index: 1000;
+
 }
 
-.modal__mobile {
+@media (max-width: 576px) {
+  .z-modal {
     position: fixed;
     top: 0;
     left: 0;
-    width: 80vw;
+    width: 90vw;
     height: 75vh;
-    transform: translate(12%, 25%);
+    transform: translate(6%, 15%);
+  }
 }
