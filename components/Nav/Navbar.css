@@ -76,7 +76,7 @@
     position: fixed;
     min-width: 100vw;
     z-index: 3;
-    padding: 2rem;
+    padding: 4rem;
     transition: all .3 ease;
   }
   .scrollColor {
