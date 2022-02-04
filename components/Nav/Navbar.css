@@ -56,6 +56,7 @@
     transition: all 0.2s ease-out;
   }
   .navLink-mobile {
+    color: #fff;
     display: none;
   }
   .nav-btn {
@@ -75,7 +76,7 @@
     background: var(--mega-law-ash) !important;
     position: fixed;
     min-width: 100vw;
-    z-index: 3;
+    z-index: 1;
     padding: 4rem;
     transition: all .3 ease;
   }

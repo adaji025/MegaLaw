@@ -61,6 +61,9 @@ a {
     left: 0px !important;
     pointer-events: initial;
 }
+.z-modal {
+    z-index: 1000 !important;
+}
 @media (min-width:992px) {
     .nmb-2 {
         margin-top: -1.2rem;

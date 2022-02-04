@@ -1,14 +1,36 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = ({open, close}) => {
+    if(!open) return null
+
+    const MODAL_STYLES = {
+        position: 'fixed',
+        width: '50vw',
+        height: '75vh',
+        top: '0',
+        left: '0',
+        transform: 'translate(50%, 25%)',
+        // background: '#fff',
+        zIndex: '1000'
+      }
+      const OVERLAY_STYLES = {
+          position: 'fixed',
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0,
+          backgroundColor: 'rgba(0,0,0, .7)',
+          zIndex: '1000'
+      }
   return (
     <div>
-      <div className="container py-5">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="d-flex justify-content-between pt-3">
+        <div style={OVERLAY_STYLES}></div>
+      <div className="container py-5 z-modal bg-white" style={MODAL_STYLES}>
+        <div className="row justify-content-center z-modal">
+          <div className="col-md-10">
+            <div className="d-flex justify-content-between py-3">
               <h3>Talk to us….</h3>
-              <span>
+              <span onClick={close}>
                 <img
                   src="./img/togglerClose.svg"
                   alt="close"

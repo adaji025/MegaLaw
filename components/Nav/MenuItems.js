@@ -23,8 +23,8 @@ export const MenuItems = [
         cName: "navLink"
     },
     {
-        title: "Register",
-        url: "/contact",
+        title: "Contact Us",
+        url: "#",
         cName: "navLink-mobile"
     }
 ]

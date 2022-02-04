@@ -1,24 +1,28 @@
 import Head from "next/head";
 import Link from "next/link";
 import Modal from "react-modal";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Footer from '../components/Footer/Footer'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Footer from "../components/Footer/Footer";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import particlesConfig from "../config/ParticleConfig";
 import Particles from "react-tsparticles";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Nav/Navbar";
 import Contact from "../components/Contact/Contact";
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration: 1000
-    })
-  }, [])
+      duration: 1000,
+    });
+  }, []);
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -28,8 +32,7 @@ export default function Home() {
       </Head>
 
       <section className={styles.heroContainer}>
-      <Navbar />
-      
+        <Navbar />
       </section>
       {/* <div className="d-sm-none">
       <Particles params={particlesConfig} id="ts"></Particles>
@@ -50,7 +53,10 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-6">
                     {/* <Fade left> */}
-                       <div className="card border-0 shadow-sm px-4 mb-lg-5" data-aos="fade-down">
+                    <div
+                      className="card border-0 shadow-sm px-4 mb-lg-5"
+                      data-aos="fade-down"
+                    >
                       <img
                         src="./img/rect-sm.svg"
                         alt=""
@@ -66,10 +72,12 @@ export default function Home() {
                       </div>
                     </div>
                     {/* </Fade> */}
-                   
                   </div>
                   <div className="col-lg-6 pb-3">
-                    <div className="card border-0 shadow-sm px-4 mt-4" data-aos="fade-left">
+                    <div
+                      className="card border-0 shadow-sm px-4 mt-4"
+                      data-aos="fade-left"
+                    >
                       <img
                         src="./img/rect-sm.svg"
                         alt=""
@@ -86,7 +94,10 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-lg-6 pb-3 nmb-2">
-                    <div className="card border-0 shadow-sm px-4" data-aos="fade-right">
+                    <div
+                      className="card border-0 shadow-sm px-4"
+                      data-aos="fade-right"
+                    >
                       <img
                         src="./img/rect-sm.svg"
                         alt=""
@@ -103,7 +114,10 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col-lg-6 pb-3">
-                    <div className="card border-0 shadow-sm px-4 mt-4" data-aos="fade-up">
+                    <div
+                      className="card border-0 shadow-sm px-4 mt-4"
+                      data-aos="fade-up"
+                    >
                       <img
                         src="./img/rect-sm.svg"
                         alt=""
@@ -151,7 +165,7 @@ export default function Home() {
               <a href="#" className="pb-2">
                 Read more...
               </a>
-              <button className={`d-block btn text-white ${styles.btn}`}>
+              <button className={`d-block btn text-white ${styles.btn}`} onClick={() => setIsOpen(true)}>
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="text-start">
                     <span
@@ -261,7 +275,10 @@ export default function Home() {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    href="#"
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
@@ -281,7 +298,10 @@ export default function Home() {
                     twinkle. By the same illusion which lifts the horizon of the
                     sea to the level of the spectator on
                   </p>
-                  <a href="#" className="pb-2 tomato-color opacity-50 d-flex align-items-center">
+                  <a
+                    href="#"
+                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
+                  >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
                   </a>
                 </div>
@@ -290,8 +310,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-12">
+            <div>
+              <Contact open={isOpen} close={() => setIsOpen(false)}/>
+            </div>
+           
+          </div>
+        </div>
+      </div>
 
-      <Contact />
       <Footer />
     </div>
   );
