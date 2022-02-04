@@ -25,6 +25,9 @@
 .tomato-bg {
     background: var(--mega-law-tomato) !important;
 }
+.ash-bg {
+    background: var(--mega-law-ash) !important;
+}
 .tomato-color {
     color: var(--mega-law-tomato);
 }
