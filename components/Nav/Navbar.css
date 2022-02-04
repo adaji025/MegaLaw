@@ -71,9 +71,16 @@
   .megaDark {
     color: var(--mega-law-dark);
   }
-  .bg {
+  .scrollBg {
     background: var(--mega-law-ash) !important;
     position: fixed;
+    min-width: 100vw;
+    z-index: 3;
+    padding: 2rem;
+    transition: all .3 ease;
+  }
+  .scrollColor {
+    color: var(--mega-law-dark);
   }
 @media (max-width: 992px) {
     .navbarItems {
