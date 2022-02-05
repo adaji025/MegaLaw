@@ -122,7 +122,7 @@
       .navLink {
         text-align: start;
         width: 100%;
-        padding: 2rem;
+        padding: 1.5rem;
         color: var(--mega-law-dark);
         display: table;
         border-bottom: 1px solid rgb(209, 202, 202);

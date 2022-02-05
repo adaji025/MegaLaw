@@ -269,10 +269,10 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.testimonial}>
-            <div class="container p-3">
+            <div class="container p-1 p-sm-3">
               <div className="row">
                 <div className="col-lg-5 d-flex justify-content-center">
-                  <div className="position-relative mb-5">
+                  <div className="position-relative mb-5 d-none d-sm-block">
                     <div className={styles.img_bg}></div>
                     <img src="./img/man.png" alt="" className="img-fluid" />
                   </div>

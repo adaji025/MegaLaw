@@ -140,6 +140,9 @@
   .welcome {
     margin-top: 10rem;
   }
+  .testimonial {
+    min-height: 400px;
+  }
 }
 
 @media (max-width: 400px) {
