@@ -76,7 +76,7 @@
     background: var(--mega-law-ash) !important;
     position: fixed;
     min-width: 100vw;
-    z-index: 1;
+    z-index: 5;
     padding: 1.5rem 4rem;
     transition: all .3 ease;
   }
@@ -97,14 +97,15 @@
         margin-top: 40px;
         transform: translate(-100%, 30%);
         cursor: pointer;
+        z-index: 10;
     }
     .nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 560px;
+        height: 900px;
         position: absolute;
-        top: 80px;
+        top: 100px;
         left: -120%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -148,12 +149,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    z-index: 100 !important;
   }
   .navLink-mobile {
     display: block;
