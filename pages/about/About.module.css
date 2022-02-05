@@ -4,8 +4,22 @@
 .aboutHero {
     height: 596px;
     background: var(--mega-law-dark);
+    
 }
-
+.about {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.about h2 {
+  font-size: 64px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
 .btn {
     background: var(--mega-law-tomato) !important;
     border-radius: 0 !important;

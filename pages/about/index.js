@@ -10,6 +10,15 @@ const About = () => {
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
         <Navbar />
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <div className={styles.about}>
+              <h2>About Megalaw</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="container py-5 mt-5">
