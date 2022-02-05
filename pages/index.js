@@ -12,6 +12,11 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Nav/Navbar";
 import Contact from "../components/Contact/Contact";
 import { useRouter } from "next/router";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Blog } from "../utils/Blog";
+import BlogPost from "../components/BlogPost/BlogPost";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +29,17 @@ export default function Home() {
   }, []);
 
   const router = useRouter();
+
+  let settings_sm = {
+    dot: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.08,
+    slideToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // cssEase: "linear",
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -40,9 +56,13 @@ export default function Home() {
               <div className="container">
                 <div className="row align-items-center">
                   <div className={`col-lg-9 text-white ${styles.welcome}`}>
-                    <p className={styles.welcome}>WELCOME TO MEGA LAW</p>
-                    <h2>We swiftly resolve legal matters.</h2>
-                    <span className="mb-2">
+                    <p className={`poppins-bold opacity-50 ${styles.welcome}`}>
+                      WELCOME TO MEGA LAW
+                    </p>
+                    <h2 className="poppins-bold">
+                      We swiftly resolve legal matters.
+                    </h2>
+                    <span className="mb-2 poppins-regular">
                       We provide value-added legal services with the broadest
                       mix of premium skills and depth of expertise drawn from
                       years of experience in corporate sector
@@ -87,7 +107,7 @@ export default function Home() {
         <Container className="py-5">
           <Row>
             <Col md={5}>
-              <h2 className="pb-2">Our Practices</h2>
+              <h2 className="pb-2 poppins-bold">Our Practices</h2>
               <p className="mega-law-muted poppins-medium">
                 But I Must Explain To You How All This Mistaken Idea Of
                 Denouncing Pleasure And Praising Pain Was Born And I Will Give
@@ -109,8 +129,8 @@ export default function Home() {
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
-                        <h5>Property Law Practice</h5>
-                        <p>
+                        <h5 className="poppins-bold">Property Law Practice</h5>
+                        <p className="poppins-medium opacity-50">
                           But I must explain to you how all this mistaken idea
                           of denouncing p leasure and praising pain was born and
                           I will
@@ -130,8 +150,10 @@ export default function Home() {
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
-                        <h5>Corporate & Commercial Law</h5>
-                        <p>
+                        <h5 className="poppins-bold">
+                          Corporate & Commercial Law
+                        </h5>
+                        <p className="poppins-medium opacity-50">
                           But I must explain to you how all this mistaken idea
                           of denouncing pleasure and praising pain was born and
                           I will
@@ -150,8 +172,8 @@ export default function Home() {
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
-                        <h5>Litigation</h5>
-                        <p>
+                        <h5 className="poppins-bold">Litigation</h5>
+                        <p className="poppins-medium opacity-50">
                           But I must explain to you how all this mistaken idea
                           of denouncing pleasure and praising pain was born and
                           I will
@@ -170,8 +192,10 @@ export default function Home() {
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
-                        <h5>Arbitration & Mediation</h5>
-                        <p>
+                        <h5 className="poppins-bold">
+                          Arbitration & Mediation
+                        </h5>
+                        <p className="poppins-medium opacity-50">
                           But I must explain to you how all this mistaken idea
                           of denouncing pleasure and praising pain was born and
                           I will
@@ -193,8 +217,8 @@ export default function Home() {
               <img src="./img/man.png" alt="" className="img-fluid" />
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center pb-3 ">
-              <h3>We are devoted to our clients.</h3>
-              <p className="mega-law-muted">
+              <h3 className="poppins-bold">We are devoted to our clients.</h3>
+              <p className="mega-law-muted poppins-medium">
                 {" "}
                 But I Must Explain To You How All This Mistaken Idea Of
                 Denouncing Pleasure And Praising Pain Was Born And I Will Give
@@ -208,7 +232,7 @@ export default function Home() {
                 Because Occasionally Circumstances Occur In Which Toil And Pain
                 Can
               </p>
-              <a href="#" className="tomato-color pb-2">
+              <a href="#" className="tomato-color pb-2 poppins-medium">
                 Read more...
               </a>
               <button
@@ -256,7 +280,9 @@ export default function Home() {
                   <div className="container">
                     <div className="row">
                       <div className="col-md-11">
-                        <span className={`d-block ${styles.swift}`}>
+                        <span
+                          className={`d-block poppins-regular ${styles.swift}`}
+                        >
                           Swift & Professional
                         </span>
                         <span
@@ -309,7 +335,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="row">
+          <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
                 <img src="./img/blog.png" alt="" className="card-img-top" />
@@ -356,6 +382,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="container d-sm-none">
+            <Slider {...settings_sm}>
+              {
+                Blog.map((post, index) => {
+                  return(
+                    <BlogPost key={index} post={post} />
+                  )
+                })
+              }
+            </Slider>
           </div>
         </div>
       </section>

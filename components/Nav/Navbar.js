@@ -81,7 +81,7 @@ const Navbar = ({ textColor }) => {
             <span className="text-secondary">&copy; 2021 Megalaw Partners</span>
           </div>
         </ul>
-        <button className={`btn text-white nav-btn`} onClick={() => setIsOpen(true)}>Contact Us</button>
+        <button className={`btn poppins-medium text-white nav-btn`} onClick={() => setIsOpen(true)}>Contact Us</button>
       </nav>
 
       {/* modal */}

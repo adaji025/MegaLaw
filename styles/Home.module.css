@@ -108,6 +108,9 @@
   .practices {
     margin-top: 12rem;
   }
+  .testimonial {
+    width: 100vw;
+  }
 }
 @media (max-width: 576px) {
   .img {
