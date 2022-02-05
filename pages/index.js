@@ -14,7 +14,6 @@ import Contact from "../components/Contact/Contact";
 import { useRouter } from "next/router";
 
 export default function Home() {
-
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -23,8 +22,8 @@ export default function Home() {
       duration: 1000,
     });
   }, []);
-  
-  const router = useRouter()
+
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <Head>
@@ -35,6 +34,51 @@ export default function Home() {
 
       <section className={styles.heroContainer}>
         <Navbar />
+        <div className="container d-flex align-items-center h_60">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-md-6">
+              <div className="container">
+                <div className="row align-items-center">
+                  <div className={`col-lg-9 text-white ${styles.welcome}`}>
+                    <p className={styles.welcome}>WELCOME TO MEGA LAW</p>
+                    <h2>We swiftly resolve legal matters.</h2>
+                    <span className="mb-2">
+                      We provide value-added legal services with the broadest
+                      mix of premium skills and depth of expertise drawn from
+                      years of experience in corporate sector
+                    </span>
+                    <button
+                      className={`d-block mt-3 btn text-white ${styles.btn}`}
+                      onClick={() => setIsOpen(true)}
+                    >
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div className="text-start">
+                          <span
+                            className={`d-block opacity-50 poppins-medium ${styles.got_issue}`}
+                          >
+                            Got an issue
+                          </span>
+                          <span className="pb-2 poppins-medium">
+                            Request Consultaion
+                          </span>
+                        </div>
+                        <span className="text-white fs-2">&#8594;</span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 d-grid">
+              <div className={styles.home_img}>
+                <img src="./img/man.png" alt="" className={styles.one} />
+                <img src="./img/man.png" alt="" className={styles.two} />
+                <img src="./img/man.png" alt="" className={styles.three} />
+                <img src="./img/man.png" alt="" className={styles.four} />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       {/* <div className="d-sm-none">
       <Particles params={particlesConfig} id="ts"></Particles>
@@ -145,10 +189,10 @@ export default function Home() {
       <section id="client" className={styles.client}>
         <div className="container">
           <div className="row">
-            <div className="col-md-6 text-center pb-3">
+            <div className="col-lg-6 text-center pb-3">
               <img src="./img/man.png" alt="" className="img-fluid" />
             </div>
-            <div className="col-md-6 d-flex flex-column justify-content-center pb-3 ">
+            <div className="col-lg-6 d-flex flex-column justify-content-center pb-3 ">
               <h3>We are devoted to our clients.</h3>
               <p className="mega-law-muted">
                 {" "}
@@ -164,10 +208,13 @@ export default function Home() {
                 Because Occasionally Circumstances Occur In Which Toil And Pain
                 Can
               </p>
-              <a href="#" className="pb-2">
+              <a href="#" className="tomato-color pb-2">
                 Read more...
               </a>
-              <button className={`d-block btn text-white ${styles.btn}`} onClick={() => setIsOpen(true)}>
+              <button
+                className={`d-block btn text-white ${styles.btn}`}
+                onClick={() => setIsOpen(true)}
+              >
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="text-start">
                     <span
@@ -187,7 +234,7 @@ export default function Home() {
         </div>
         <div className="container py-5">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <h3 className="poppins-bold">What Our Clients Say</h3>
               <p className="poppins-medium">
                 But I Must Explain To You How All This Mistaken Idea Of
@@ -197,15 +244,15 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.testimonial}>
-            <div class="container">
+            <div class="container p-3">
               <div className="row">
-                <div className="col-md-5 d-flex justify-content-center">
-                  <div className="position-relative">
+                <div className="col-lg-5 d-flex justify-content-center">
+                  <div className="position-relative mb-5">
                     <div className={styles.img_bg}></div>
                     <img src="./img/man.png" alt="" className="img-fluid" />
                   </div>
                 </div>
-                <div className="col-md-6 d-flex flex-column justify-content-center">
+                <div className="col-lg-6 d-flex flex-column justify-content-center">
                   <div className="container">
                     <div className="row">
                       <div className="col-md-11">
@@ -278,7 +325,7 @@ export default function Home() {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -301,7 +348,7 @@ export default function Home() {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -316,9 +363,8 @@ export default function Home() {
         <div className="row justify-content-center">
           <div className="col-md-12">
             <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)}/>
+              <Contact open={isOpen} close={() => setIsOpen(false)} />
             </div>
-           
           </div>
         </div>
       </div>

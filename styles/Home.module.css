@@ -1,5 +1,8 @@
+.container {
+  background: var(--mega-law-ash);
+}
 .heroContainer {
-  height: 95vh;
+  height: 98vh;
   background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg);
   background-position: bottom left, bottom center;
   background-size: 2%;
@@ -8,8 +11,49 @@
   position: relative;
 }
 
+.home_img {
+  background-color: rgba(85, 21, 9, 0.712);
+  position: relative;
+  /* max-width: 30vw; */
+  margin-top: 300px;
+  width: 80vw;
+}
+
+ .home_img img {
+  max-width: 50%;
+  width: 350px;
+}
+.home_img img.one {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.home_img img.two {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+.home_img img.three {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+ 
+}
+.home_img img.four {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+} 
 .practices,
-.client, .blog {
+.client,
+.blog {
   background: var(--mega-law-ash);
   overflow-x: hidden;
 }
@@ -48,31 +92,55 @@
 .testimonial_text {
   font-size: 32px;
 }
-@media (max-width: 500px) {
-  .container {
-    height: 95vh;
-    background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg);
-    background-position: bottom left, bottom center;
-    background-size: 5%;
-    background-repeat: no-repeat;
-    background-color: var(--mega-law-dark);
+.welcome {
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .home_img {
+    background-color: rgba(85, 21, 9, 0.712);
+    position: relative;
+    max-width: 30vw;
+    margin-top: 150px;
+    margin-left: 50px;
   }
-   .img {
-        position: absolute;
-        top: 0;
-        margin-top: -20px;
-        margin-left: 0px;
-        max-width: 100%;
-      }
-      .img_bg {
-        background: var(--mega-law-tomato);
-        opacity: 0.1;
-        margin-top: 00px;
-        max-width: 95vw;
-        height: 400px;
-        
-      }
-      .testimonial_text {
-        font-size: 24px;
-      }
+}
+@media (max-width: 768px) {
+  .practices {
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 576px) {
+  .img {
+    position: absolute;
+    top: 0;
+    margin-top: -20px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .img_bg {
+    background: var(--mega-law-tomato);
+    opacity: 0.1;
+    margin-top: 00px;
+    max-width: 90vw;
+    height: 400px;
+  }
+  .testimonial_text {
+    font-size: 24px;
+  }
+  .welcome {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .home_img {
+    background-color: rgba(85, 21, 9, 0.712);
+    position: relative;
+    /* max-width: 30vw; */
+    margin-top: 180px;
+    width: 80vw;
+  }
+  /* .practices {
+    margin-top: 8rem;
+  } */
 }

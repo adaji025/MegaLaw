@@ -41,6 +41,12 @@ input::placeholder {
 .fs-16 {
     font-size: 16px;
 }
+.h_60 {
+    height: 60vh;
+}
+.mt_4 {
+    margin-top: 4rem;
+}
 a {
     text-decoration: none;
 }
@@ -61,7 +67,9 @@ a {
     left: 0px !important;
     pointer-events: initial;
 }
-
+.flex {
+    word-spacing: nowrap;
+}
 @media (min-width:992px) {
     .nmb-2 {
         margin-top: -1.2rem;
