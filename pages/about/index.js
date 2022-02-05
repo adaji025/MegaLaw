@@ -138,7 +138,7 @@ const About = () => {
           <div className="col-md-11">
             <div className="container">
               <div className="row">
-                <div className="col-md-6 col-lg-3">
+                <div className="col-md-6 col-lg-3 py-3">
                   <div className="position-relative">
                     <img
                       src="./img/man.png"
@@ -151,7 +151,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-lg-3">
+                <div className="col-md-6 col-lg-3 py-3">
                   <div className="position-relative">
                     <img
                       src="./img/man.png"
@@ -164,7 +164,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-lg-3">
+                <div className="col-md-6 col-lg-3 py-3">
                   <div className="position-relative">
                     <img
                       src="./img/man.png"
@@ -177,7 +177,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-lg-3">
+                <div className="col-md-6 col-lg-3 py-3">
                   <div className="position-relative">
                     <img
                       src="./img/man.png"
