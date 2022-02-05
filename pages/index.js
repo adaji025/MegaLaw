@@ -118,7 +118,6 @@ export default function Home() {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-6">
-                    {/* <Fade left> */}
                     <div
                       className="card border-0 shadow-sm px-4 mb-lg-5"
                       data-aos="fade-down"
@@ -137,7 +136,6 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    {/* </Fade> */}
                   </div>
                   <div className="col-lg-6 pb-3">
                     <div
@@ -210,13 +208,16 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="client" className={styles.client}>
+      <section id="client" className={styles.client} data-aos="zoom-in-up">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 text-center pb-3">
-              <img src="./img/man.png" alt="" className="img-fluid" />
+            <div className="col-lg-6 text-center px-4 px-sm-1 pb-3">
+            <div className="position-relative mb-5">
+                    <div className={styles.img_bg}></div>
+                    <img src="./img/man.png" alt="" className="img-fluid" />
+                  </div>
             </div>
-            <div className="col-lg-6 d-flex flex-column justify-content-center pb-3 ">
+            <div className="col-lg-6 d-flex flex-column justify-content-center pb-3 px-4 px-sm-1 ">
               <h3 className="poppins-bold">We are devoted to our clients.</h3>
               <p className="mega-law-muted poppins-medium">
                 {" "}
@@ -256,7 +257,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container py-5">
+        <div className="container py-5"    data-aos="fade-up">
           <div className="row">
             <div className="col-lg-6">
               <h3 className="poppins-bold">What Our Clients Say</h3>
@@ -338,7 +339,7 @@ export default function Home() {
           <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="" className="card-img-top"  data-aos="flip-left" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -361,7 +362,7 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="" className="card-img-top"  data-aos="flip-right" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges

@@ -83,6 +83,13 @@
   margin-top: 20px;
   margin-left: -20px;
 }
+.client img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: -20px;
+}
 .img_bg {
   background: var(--mega-law-tomato);
   opacity: 0.1;
@@ -125,7 +132,7 @@
     opacity: 0.1;
     margin-top: 00px;
     max-width: 90vw;
-    height: 400px;
+    height: 340px;
   }
   .testimonial_text {
     font-size: 24px;
@@ -141,7 +148,7 @@
     position: relative;
     /* max-width: 30vw; */
     margin-top: 180px;
-    width: 80vw;
+    width: 90vw;
   }
   /* .practices {
     margin-top: 8rem;
