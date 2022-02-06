@@ -48,13 +48,16 @@ input::placeholder {
     margin-top: 4rem;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .collapse-nav {
     background: var(--mega-law-dark) !important;
 }
 .slider {
     overflow-x: hidden;
+  }
+  .slider-mx-2 {
+      padding-left: 1rem !important;
   }
 #tsparticles canvas {
     position: absolute !important;

@@ -232,7 +232,7 @@ const About = () => {
           <Slider {...settings_sm} className={styles.slider}>
             {Teams.map((item, index) => {
               return (
-                <div className="position-relative px-2" key={index}>
+                <div className="position-relative slider-mx-2" key={index}>
                   <img
                     src={item.image}
                     alt="team"
