@@ -87,3 +87,24 @@ a {
         margin-top: -3rem !important;
     }
 }
+@media  (device-width: 912px) and (device-height: 1368px) {
+    .h_60 {
+        height:40vh;
+    }
+  }
+@media  (device-width: 320px) and (device-height: 568px) {
+    .row>* {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * .05) !important;
+      padding-left: calc(var(--bs-gutter-x) * .05) !important;
+      margin-top: var(--bs-gutter-y);
+  }
+  }
+@media  (device-width: 280px) and (device-height: 653px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        overflow-x: hidden;
+        padding-left: .2rem !important;
+    }
+  }

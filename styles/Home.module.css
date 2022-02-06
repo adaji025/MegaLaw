@@ -2,7 +2,7 @@
   background: var(--mega-law-ash);
 }
 .heroContainer {
-  height: 110vh;
+  height: 95vh;
   background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg);
   background-position: bottom left, bottom center;
   background-size: 2%;
@@ -132,13 +132,13 @@
     opacity: 0.1;
     margin-top: 00px;
     max-width: 90vw;
-    height: 340px;
+    height: 380px;
   }
   .testimonial_text {
     font-size: 24px;
   }
   .welcome {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
   .testimonial {
     min-height: 400px;
@@ -153,7 +153,74 @@
     margin-top: 180px;
     width: 90vw;
   }
-  /* .practices {
-    margin-top: 8rem;
-  } */
+  .img_bg {
+    background: var(--mega-law-tomato);
+    opacity: 0.1;
+    margin-top: 00px;
+    max-width: 90vw;
+    height: 340px;
+  }
+}
+@media  (device-width: 820px) and (device-height: 1180px) {
+  .heroContainer {
+    max-height: 70vh !important;
+    
+  }
+}
+@media  (device-width: 912px) and (device-height: 1368px) {
+  .heroContainer {
+    max-height: 60vh !important;
+    
+  }
+}
+@media  (device-width: 414px) and (device-height: 736px) {
+  .home_img {
+    margin-top: 200px;
+}
+}
+@media  (device-width: 411px) and (device-height: 823px) {
+  .home_img {
+    margin-top: 175px;
+}
+}
+@media  (device-width: 414px) and (device-height: 896px) {
+  .home_img {
+    margin-top: 175px;
+}
+.practices {
+  margin-top: 4rem;
+}
+}
+@media  (device-width: 412px) and (device-height: 914px) {
+  .home_img {
+    margin-top: 190px;
+    margin-left: 1.5rem;
+}
+.practices {
+  margin-top: 4rem;
+}
+}
+@media  (device-width: 412px) and (device-height: 915px) {
+  .home_img {
+    margin-top: 190px;
+    margin-left: 1.5rem;
+}
+.practices {
+  margin-top: 4rem;
+}
+}
+@media  (device-width: 411px) and (device-height: 731px) {
+  .home_img {
+    margin-top: 175px;
+}
+}
+@media  (device-width: 375px) and (device-height: 812px) {
+ .welcome {
+   margin-top: 4.5rem;
+ }
+}
+@media  (device-width: 360px) and (device-height: 640px) {
+ .practices {
+   margin-top: 12rem;
+ }
 }

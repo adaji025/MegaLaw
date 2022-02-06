@@ -107,8 +107,8 @@ export default function Home() {
         <Container className="py-5">
           <Row>
             <Col md={5}>
-              <h2 className="pb-2 poppins-bold">Our Practices</h2>
-              <p className="mega-law-muted poppins-medium">
+              <h2 className="pb-2 px-2 poppins-bold">Our Practices</h2>
+              <p className="mega-law-muted poppins-medium px-2">
                 But I Must Explain To You How All This Mistaken Idea Of
                 Denouncing Pleasure And Praising Pain Was Born And I Will Give
                 You A Complete Account Of The System, And Expound
