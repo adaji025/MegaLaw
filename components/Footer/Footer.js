@@ -19,7 +19,7 @@ const Footer = () => {
                   <form>
                     <label
                       className={`py-2 text-white poppins-medium ${styles.label}`}
-                      htmlfor="newsletter"
+                      htmlFor="newsletter"
                     >
                       Subscribe to our newsletter
                     </label>

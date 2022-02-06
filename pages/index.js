@@ -270,7 +270,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.testimonial}>
-            <div class=" p-1 p-sm-3">
+            <div className=" p-1 p-sm-3">
               <div className="row">
                 <div className="col-lg-5 d-flex justify-content-center pb-5">
                   <div className="position-relative mb-5 d-none d-sm-block">
