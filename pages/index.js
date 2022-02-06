@@ -208,17 +208,17 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="client" className={styles.client} data-aos="zoom-in-up">
+      <section id="client" className={styles.client} >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 text-center px-4 px-sm-1 pb-3">
+            <div className="col-lg-6 text-center px-4 px-sm-3 ">
             <div className="position-relative mb-5">
-                    <div className={styles.img_bg}></div>
-                    <img src="./img/man.png" alt="" className="img-fluid" />
+                    <div className={`mw-80 mh-80 ${styles.img_bg}`}></div>
+                    <img src="./img/man.png" alt="" className="img-fluid mw-80" />
                   </div>
             </div>
-            <div className="col-lg-6 d-flex flex-column justify-content-center pb-3 px-4 px-sm-1 ">
-              <h3 className="poppins-bold">We are devoted to our clients.</h3>
+            <div className="col-lg-6 d-flex flex-column justify-content-center pb-5 px-4 px-sm-1 ">
+              <h3 className="poppins-bold pt-3">We are devoted to our clients.</h3>
               <p className="mega-law-muted poppins-medium">
                 {" "}
                 But I Must Explain To You How All This Mistaken Idea Of
@@ -257,6 +257,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
         <div className="container py-5"    data-aos="fade-up">
           <div className="row">
             <div className="col-lg-6">
@@ -269,9 +270,9 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.testimonial}>
-            <div class="container p-1 p-sm-3">
+            <div class=" p-1 p-sm-3">
               <div className="row">
-                <div className="col-lg-5 d-flex justify-content-center">
+                <div className="col-lg-5 d-flex justify-content-center pb-5">
                   <div className="position-relative mb-5 d-none d-sm-block">
                     <div className={styles.img_bg}></div>
                     <img src="./img/man.png" alt="" className="img-fluid" />

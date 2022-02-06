@@ -70,13 +70,20 @@ a {
 .flex {
     word-spacing: nowrap;
 }
+
 @media (min-width:992px) {
     .nmb-2 {
         margin-top: -1.2rem;
     }
+    
 }
 @media (max-width:992px) {
     .our-services-height {
         height: 200px;
+    }
+}
+@media (max-width:500px) {
+    .nmt-2 {
+        margin-top: -3rem !important;
     }
 }

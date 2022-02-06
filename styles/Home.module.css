@@ -2,7 +2,7 @@
   background: var(--mega-law-ash);
 }
 .heroContainer {
-  height: 98vh;
+  height: 110vh;
   background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg);
   background-position: bottom left, bottom center;
   background-size: 2%;
