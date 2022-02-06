@@ -1,10 +1,25 @@
 import { useRouter } from "next/router";
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
+import { Blog as blog} from "../../utils/Blog";
+import BlogPost from "../../components/BlogPost/BlogPost";
 
 const Blog = () => {
   const router = useRouter()
+
+  let settings_sm = {
+    dot: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.08,
+    slideToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   return (
     <div>
       <Navbar textColor="megaDark" />
@@ -43,7 +58,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-          <div className="row">
+          <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
                 <img src="./img/blog.png" alt="" className="card-img-top" />
@@ -136,6 +151,17 @@ const Blog = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="container d-sm-none">
+            <Slider {...settings_sm} className="slider">
+              {
+                blog.map((post, index) => {
+                  return(
+                    <BlogPost key={index} post={post} />
+                  )
+                })
+              }
+            </Slider>
           </div>
         </div>
       </section>

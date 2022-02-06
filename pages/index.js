@@ -38,8 +38,8 @@ export default function Home() {
     slideToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    // cssEase: "linear",
   };
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -208,7 +208,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section id="client" className={styles.client} >
+      <section id="client" className={styles.client} data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center px-4 px-sm-3 ">

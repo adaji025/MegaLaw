@@ -1,11 +1,26 @@
 import React, { useState } from "react";
-import Footer from '../../components/Footer/Footer'
+import Footer from "../../components/Footer/Footer";
 import styles from "./About.module.css";
-import Navbar from '../../components/Nav/Navbar'
+import Navbar from "../../components/Nav/Navbar";
 import Contact from "../../components/Contact/Contact";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Teams } from "../../utils/Teams";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  let settings_sm = {
+    dot: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1.08,
+    slideToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   return (
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
@@ -14,7 +29,7 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <div className={styles.about}>
-              <h2>About Megalaw</h2>
+                <h2>About Megalaw</h2>
               </div>
             </div>
           </div>
@@ -44,7 +59,10 @@ const About = () => {
               Because Occasionally Circumstances Occur In Which Toil And Pain
               Can
             </p>
-            <button className={`d-block btn text-white ${styles.btn}`} onClick={() => setIsOpen(true)}>
+            <button
+              className={`d-block btn text-white ${styles.btn}`}
+              onClick={() => setIsOpen(true)}
+            >
               <div className="d-flex justify-content-between align-items-center">
                 <div className="text-start">
                   <span
@@ -134,7 +152,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="row ps-xl-3">
+        <div className="row ps-xl-3 d-none d-sm-flex">
           <div className="col-md-11">
             <div className="container">
               <div className="row">
@@ -146,8 +164,12 @@ const About = () => {
                       className={`img-fluid ${styles.team_img}`}
                     />
                     <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">Mohammed Ndgana</span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">Principal Partner</span>
+                      <span className="d-block text-light px-3 poppins-bold">
+                        Mohammed Ndgana
+                      </span>
+                      <span className="d-block text-light px-3 poppins-medium text-lighter">
+                        Principal Partner
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -159,8 +181,12 @@ const About = () => {
                       className={`img-fluid ${styles.team_img}`}
                     />
                     <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">Mohammed Ndgana</span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">Principal Partner</span>
+                      <span className="d-block text-light px-3 poppins-bold">
+                        Mohammed Ndgana
+                      </span>
+                      <span className="d-block text-light px-3 poppins-medium text-lighter">
+                        Principal Partner
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -172,8 +198,12 @@ const About = () => {
                       className={`img-fluid ${styles.team_img}`}
                     />
                     <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">Mohammed Ndgana</span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">Principal Partner</span>
+                      <span className="d-block text-light px-3 poppins-bold">
+                        Mohammed Ndgana
+                      </span>
+                      <span className="d-block text-light px-3 poppins-medium text-lighter">
+                        Principal Partner
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -185,8 +215,12 @@ const About = () => {
                       className={`img-fluid ${styles.team_img}`}
                     />
                     <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">Mohammed Ndgana</span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">Principal Partner</span>
+                      <span className="d-block text-light px-3 poppins-bold">
+                        Mohammed Ndgana
+                      </span>
+                      <span className="d-block text-light px-3 poppins-medium text-lighter">
+                        Principal Partner
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -194,14 +228,37 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="d-sm-none">
+          <Slider {...settings_sm} className={styles.slider}>
+            {Teams.map((item, index) => {
+              return (
+                <div className="position-relative px-2" key={index}>
+                  <img
+                    src={item.image}
+                    alt="team"
+                    className={`img-fluid ${styles.team_img}`}
+                  />
+                  <div className={`py-2 ${styles.team_title}`}>
+                    <span className="d-block text-light px-4 poppins-bold">
+                      {item.name}
+                    </span>
+                    <span className="d-block text-light px-4 poppins-medium text-lighter">
+                      {item.title}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
-        {/* modal */}
-        <div className="container">
+      {/* modal */}
+      <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-12">
             <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)}/>
-            </div>   
+              <Contact open={isOpen} close={() => setIsOpen(false)} />
+            </div>
           </div>
         </div>
       </div>

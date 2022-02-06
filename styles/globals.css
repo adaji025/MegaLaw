@@ -53,6 +53,9 @@ a {
 .collapse-nav {
     background: var(--mega-law-dark) !important;
 }
+.slider {
+    overflow-x: hidden;
+  }
 #tsparticles canvas {
     position: absolute !important;
     top: 0;

@@ -54,7 +54,9 @@
     z-index: 2;
     background: transparent linear-gradient(180deg, #0A0F1400 0%, #05070900 54%, #000000 100%) 0% 0% no-repeat padding-box;
 }
-
+.slider {
+  overflow-x: hidden;
+}
   @media (max-width: 576px) {
     .img {
         position: absolute;
