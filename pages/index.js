@@ -91,10 +91,10 @@ export default function Home() {
             </div>
             <div className="col-md-6 d-grid">
               <div className={styles.home_img}>
-                <img src="./img/man.png" alt="" className={styles.one} />
-                <img src="./img/man.png" alt="" className={styles.two} />
-                <img src="./img/man.png" alt="" className={styles.three} />
-                <img src="./img/man.png" alt="" className={styles.four} />
+                <img src="./img/man.png" alt="megalaw" className={styles.one} />
+                <img src="./img/man.png" alt="megalaw" className={styles.two} />
+                <img src="./img/man.png" alt="megalaw" className={styles.three} />
+                <img src="./img/man.png" alt="megalaw" className={styles.four} />
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
                     >
                       <img
                         src="./img/rect-sm.svg"
-                        alt=""
+                        alt="megalaw blog image"
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
@@ -144,7 +144,7 @@ export default function Home() {
                     >
                       <img
                         src="./img/rect-sm.svg"
-                        alt=""
+                        alt="megalaw blog image"
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
@@ -166,7 +166,7 @@ export default function Home() {
                     >
                       <img
                         src="./img/rect-sm.svg"
-                        alt=""
+                        alt="megalaw blog image"
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
@@ -186,7 +186,7 @@ export default function Home() {
                     >
                       <img
                         src="./img/rect-sm.svg"
-                        alt=""
+                        alt="megalaw blog image"
                         className={`mt-4 mb-2 ${styles.practicesImg}`}
                       />
                       <div className="card-body">
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="col-lg-6 text-center px-4 px-sm-3 ">
             <div className="position-relative mb-5">
                     <div className={`mw-80 mh-80 ${styles.img_bg}`}></div>
-                    <img src="./img/man.png" alt="" className="img-fluid mw-80" />
+                    <img src="./img/man.png" alt="megalaw" className="img-fluid mw-80" />
                   </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center pb-5 px-4 px-sm-1 ">
@@ -275,7 +275,7 @@ export default function Home() {
                 <div className="col-lg-5 d-flex justify-content-center pb-5">
                   <div className="position-relative mb-5 d-none d-sm-block">
                     <div className={styles.img_bg}></div>
-                    <img src="./img/man.png" alt="" className="img-fluid" />
+                    <img src="./img/man.png" alt="megalaw" className="img-fluid" />
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top"  data-aos="flip-left" />
+                <img src="./img/blog.png" alt="blog image" className="card-img-top"  data-aos="flip-left" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -363,7 +363,7 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top"  data-aos="flip-right" />
+                <img src="./img/blog.png" alt="blog" className="card-img-top"  data-aos="flip-right" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges

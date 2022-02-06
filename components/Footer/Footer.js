@@ -78,13 +78,13 @@ const Footer = () => {
               </Container>
             </Col>
           </Row>
-          <Row className="my-5">
-            <Col md={6} className="pb-3">
-              <span className="text-secondary">
+          <Row className="mt-5">
+            <Col md={6} className="pb-3 order-2 order-sm-1">
+              <p className="text-secondary text-center text-sm-start py-3">
                 &copy; 2021 Megalaw Partners
-              </span>
+              </p>
             </Col>
-            <Col md={6} className="d-flex justify-content-md-end">
+            <Col md={6} className="d-flex justify-content-md-end order-1 order-sm-2">
               <Link href="#">
                 <a className="px-3 poppins-medium text-secondary">Instagram</a>
               </Link>

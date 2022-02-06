@@ -91,7 +91,7 @@ const About = () => {
                     <div className={styles.img_bg}></div>
                     <img
                       src="./img/man.png"
-                      alt=""
+                      alt="megalaw"
                       className={`px-2 ${styles.img}`}
                     />
                   </div>
@@ -117,7 +117,7 @@ const About = () => {
                     <div className={` ${styles.img_bg}`}></div>
                     <img
                       src="./img/man.png"
-                      alt=""
+                      alt="megalaw"
                       className={`px-2 ${styles.img}`}
                     />
                   </div>

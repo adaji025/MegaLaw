@@ -4,7 +4,7 @@ const BlogPost = ({post}) => {
   return (
     <div>
       <div className="card bg-transparent border-0 px-2">
-        <img src={post.img} alt="" className="card-img-top" />
+        <img src={post.img} alt="post image" className="card-img-top" />
         <div className="card-body">
           <h5 className="poppins-medium">
            {post.description}

@@ -17,7 +17,7 @@ const Post = () => {
               <div className={styles.back}>
                 <img
                   src="./img/go-back.svg"
-                  alt=""
+                  alt="blog"
                   className="img-fluid w-50"
                 />
               </div>
@@ -32,7 +32,7 @@ const Post = () => {
                 </h3>
               </div>
               <div className="d-flex justify-content-center py-3">
-                <img src="./img/rect-sm.svg" alt="" className="img-fluid" />
+                <img src="./img/rect-sm.svg" alt="megalaw" className="img-fluid" />
               </div>
               <p className="poppins-medium opacity-50">
                 But I Must Explain To You How All This Mistaken Idea Of
@@ -58,7 +58,7 @@ const Post = () => {
                 <div className={styles.authorContainer}>
                   <img
                     src="./img/man.png"
-                    alt=""
+                    alt="megalaw"
                     className="img-fluid rounded-circle ms-3 my-auto"
                   />
                 </div>
@@ -87,7 +87,7 @@ const Post = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="megalaw" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -112,7 +112,7 @@ const Post = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="blog" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges

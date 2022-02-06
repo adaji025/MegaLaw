@@ -43,7 +43,7 @@ const Blog = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-end">
-            <img src="./img/rect-sm.svg" alt="" className="img-fluid" />
+            <img src="./img/rect-sm.svg" alt="megalaw" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ const Blog = () => {
           <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -84,7 +84,7 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -107,7 +107,7 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -130,7 +130,7 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="" className="card-img-top" />
+                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
