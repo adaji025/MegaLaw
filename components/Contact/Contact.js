@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from 'emailjs-com'
 
 const Contact = ({open, close}) => {
-    if(!open) return null
+  const form = useRef();
+  function sendEmail(e) {
+    e.preventDefault();
 
-    const MODAL_STYLES = {
-        position: 'fixed',
-        width: '50vw',
-        height: '75vh',
-        top: '0',
-        left: '0',
-        transform: 'translate(50%, 25%)',
-        zIndex: '1000'
-      }
-    const MODAL_SIZE = [ 'modal__web', 'modal__mobile']
-     
+    emailjs.sendForm('service_u7vq21n', 'template_3kcl706', form.current, 'user_TnDbaiKKTdNxxrfduRKFv')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  }
+    if(!open) return null  
 
     
       const OVERLAY_STYLES = {
@@ -41,14 +42,14 @@ const Contact = ({open, close}) => {
                 />
               </span>
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                   <label htmlFor="name" className="poppins-medium opacity-50 pb-2">Full name</label>
-                <input type="text" id="name" className="form-control mb-3 py-3 border-0 ash-bg" placeholder="Type here…" />
+                <input type="text" name="name" id="name" className="form-control mb-3 py-3 border-0 ash-bg" placeholder="Type here…" />
               </div>
               <div className="form-group">
                   <label htmlFor="email" className="poppins-medium opacity-50 pb-2">Email Address</label>
-                <input type="text" id="email" className="form-control mb-3 py-3 border-0 ash-bg" placeholder="your@email.com" />
+                <input name="email" type="text" id="email" className="form-control mb-3 py-3 border-0 ash-bg" placeholder="your@email.com" />
               </div>
               <div className="form-group">
                   <label htmlFor="message" className="poppins-medium opacity-50 pb-2">Tell us about your case</label>
