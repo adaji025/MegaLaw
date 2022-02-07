@@ -55,14 +55,14 @@ export default function Home() {
             <div className="col-md-6">
               <div className="container">
                 <div className="row align-items-center">
-                  <div className={`col-lg-9 text-white ${styles.welcome}`}>
+                  <div className={`col-lg-11 text-white ${styles.welcome}`}>
                     <p className={`poppins-bold opacity-50 ${styles.welcome}`}>
                       WELCOME TO MEGA LAW
                     </p>
-                    <h2 className="poppins-bold">
+                    <h2 className={`poppins-bold ${styles.inrotext}`}>
                       We swiftly resolve legal matters.
                     </h2>
-                    <span className="mb-2 poppins-regular">
+                    <span className={`mb-2 poppins-regular `}>
                       We provide value-added legal services with the broadest
                       mix of premium skills and depth of expertise drawn from
                       years of experience in corporate sector
