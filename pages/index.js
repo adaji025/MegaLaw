@@ -99,6 +99,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="container text-center pt-5 mt-4 switch">
+          <img src="./img/switch-icon.svg" alt="switch" className="img-fluid" />
+        </div>
       </section>
       {/* <div className="d-sm-none">
       <Particles params={particlesConfig} id="ts"></Particles>

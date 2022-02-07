@@ -3,8 +3,8 @@
 }
 .heroContainer {
   height: 95vh;
-  background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg);
-  background-position: bottom left, bottom center;
+  /* background: url(../public/img/dot.svg), url(../public/img/switch-icon.svg); */
+  background-position: bottom left,  50%;
   background-size: 2%;
   background-repeat: no-repeat;
   background-color: var(--mega-law-dark);
