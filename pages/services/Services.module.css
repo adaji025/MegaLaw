@@ -3,7 +3,11 @@
 }
 .services {
     height: 596px;
-    background: var(--mega-law-dark);
+    background: url(../../public/img/dot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: var(--mega-law-dark);
 }
 .our_services {
     font-size: 64px;
