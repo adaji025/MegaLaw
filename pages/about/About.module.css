@@ -2,9 +2,12 @@
     background: var(--mega-law-ash);
 }
 .aboutHero {
-    height: 596px;
-    background: var(--mega-law-dark);
-    
+    height: 460px;
+    background: url(../../public/img/dot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-color: var(--mega-law-dark);  
 }
 .about {
   height: 400px;
@@ -15,7 +18,7 @@
   
 }
 .about h2 {
-  font-size: 64px;
+  font-size: 50px;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;

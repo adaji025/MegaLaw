@@ -12,7 +12,7 @@ import { Teams } from "../../utils/Teams";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   let settings_sm = {
     dot: true,
     infinite: true,
@@ -33,7 +33,8 @@ const About = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
-        <Navbar />
+      <Navbar />
+        <div className={styles.aboutHero_1}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-8">
@@ -43,30 +44,24 @@ const About = () => {
             </div>
           </div>
         </div>
+        </div>
+        
       </div>
 
       <div className="container py-5 mt-5">
         <div className="row justify-content-center">
           <div className="col-md-11">
             <p className="opacity-50 poppins-medium">
-              But I Must Explain To You How All This Mistaken Idea Of Denouncing
-              Pleasure And Praising Pain Was Born And I Will Give You A Complete
-              Account Of The System, And Expound The Actual Teachings Of The
-              Great Explorer Of The Truth, The Master-Builder Of Human
-              Happiness. No One Rejects, Dislikes,
+              Megalaw Partners is a firm registered under the companies and
+              Allied Matters Act with Registeration Number BN3157638. The Firm
+              is established by Barrister Muhammed Ndagana Muhammd (Principal
+              Patner), a legal Practioner that was called to the Nigerian Bar
+              over a decade ago and has been in active practice since then
             </p>
             <p className="opacity-50 poppins-medium">
-              But I Must Explain To You How All This Mistaken Idea Of Denouncing
-              Pleasure And Praising Pain Was Born And I Will Give You A Complete
-              Account Of The System, And Expound The Actual Teachings Of The
-              Great Explorer Of The Truth, The Master-Builder Of Human
-              Happiness. No One Rejects, Dislikes, Or Avoids Pleasure Itself,
-              Because It Is Pleasure, But Because Those Who Do Not Know How To
-              Pursue Pleasure Rationally Encounter Consequences That Are
-              Extremely Painful. Nor Again Is There Anyone Who Loves Or Pursues
-              Or Desires To Obtain Pain Of Itself, Because It Is Pain, But
-              Because Occasionally Circumstances Occur In Which Toil And Pain
-              Can
+              We are full-service Law Firm that Capitalizes on it's skilled
+              professionals and technology to provived excellent legal services
+              to it's client
             </p>
             <button
               className={`d-block btn text-white ${styles.btn}`}
@@ -108,15 +103,9 @@ const About = () => {
                 <div className="col-lg-6 d-flex flex-column justify-content-center">
                   <h3 className="poppins-bold">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
-                    But I Must Explain To You How All This Mistaken Idea Of
-                    Denouncing Pleasure And Praising Pain Was Born And I Will
-                    Give You A Complete Account Of The System, And Expound The
-                    Actual Teachings Of The Great Explorer Of The Truth, The
-                    Master-Builder Of Human Happiness. No One Rejects, Dislikes,
-                    Or Avoids Pleasure Itself, Because It Is Pleasure, But
-                    Because Those Who Do Not Know How To Pursue Pleasure
-                    Rationally Encounter Consequences That Are Extremely
-                    Painful. Nor Again Is There
+                    Our utmost goal is to serve our client with integrity and
+                    professionalism to exceed your expectations and become the
+                    reference point in legal consultancy and advocay in Nigeria
                   </p>
                 </div>
               </div>
@@ -132,7 +121,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1  ps-lg-5">
-                  <h3 className="poppins-bold">Our Mission</h3>
+                  <h3 className="poppins-bold">Our vision</h3>
                   <p className="poppins-medium opacity-50">
                     But I Must Explain To You How All This Mistaken Idea Of
                     Denouncing Pleasure And Praising Pain Was Born And I Will
