@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import styles from "./About.module.css";
 import Navbar from "../../components/Nav/Navbar";
 import Contact from "../../components/Contact/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,6 +22,13 @@ const About = () => {
     autoplay: true,
     autoplaySpeed: 2000,
   };
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+    });
+  }, []);
 
   return (
     <div className={styles.hero}>
@@ -85,7 +94,7 @@ const About = () => {
         <div className="row">
           <div className="col-xl-11">
             <div className="container">
-              <div className="row mb-3">
+              <div className="row mb-3" data-aos="fade-in">
                 <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start">
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
                     <div className={styles.img_bg}></div>
@@ -98,7 +107,7 @@ const About = () => {
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center">
                   <h3 className="poppins-bold">Our Mission</h3>
-                  <p className="poppins-medium opacity-50">
+                  <p className="poppins-medium opacity-50" data-aos="fade-in">
                     But I Must Explain To You How All This Mistaken Idea Of
                     Denouncing Pleasure And Praising Pain Was Born And I Will
                     Give You A Complete Account Of The System, And Expound The
@@ -111,7 +120,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="row">
+              <div className="row" data-aos="fade-in">
                 <div className="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
                     <div className={` ${styles.img_bg}`}></div>
@@ -142,7 +151,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container my-5 py-5">
+      <div className="container my-5 py-5" data-aos="fade-in">
         <div className="row ps-xl-5">
           <div className="col-md-6">
             <h3 className="poppins-bold">Our Team</h3>
