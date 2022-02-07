@@ -59,9 +59,9 @@ const About = () => {
               over a decade ago and has been in active practice since then
             </p>
             <p className="opacity-50 poppins-medium">
-              We are full-service Law Firm that Capitalizes on it's skilled
+              We are full-service Law Firm that Capitalizes on its skilled
               professionals and technology to provived excellent legal services
-              to it's client
+              to its client
             </p>
             <button
               className={`d-block btn text-white ${styles.btn}`}
