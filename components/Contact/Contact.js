@@ -6,7 +6,7 @@ const Contact = ({open, close}) => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_u7vq21n', 'template_3kcl706', form.current, 'user_TnDbaiKKTdNxxrfduRKFv')
+    emailjs.sendForm('service_0i5lnum', 'template_8pa4t0z', form.current, 'user_TK0ic5dSD1liigMMwkYha')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
