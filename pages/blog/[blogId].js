@@ -46,7 +46,7 @@ const Post = ({post}) => {
                   <img
                     src={post.data?.attributes.author_image?.data?.attributes.url}
                     alt="megalaw"
-                    className="img-fluid rounded-circle ms-3 my-auto"
+                    className="img-fluid rounded-circle ms-3 my-auto author_image"
                   />
                 </div>
                 <span className="ms-4">
