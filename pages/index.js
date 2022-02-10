@@ -368,8 +368,8 @@ export default function Home({ posts }) {
                     key={index}
                     title={post?.attributes?.title}
                     postImg={post.attributes.post_image?.data?.attributes?.url}
-                    postContent={post.attributes.content.slice(0, 180) + "..."}
-                    postUrl="/blog"
+                    postContent={post.attributes.content.slice(0, 300) + "..."}
+                    postUrl={`/blog/${post.id}`}
                   />
                   ;
                 </div>
@@ -385,7 +385,7 @@ export default function Home({ posts }) {
                     title={post?.attributes?.title}
                     postImg={post.attributes.post_image?.data?.attributes?.url}
                     postContent={post.attributes.content.slice(0, 180) + "..."}
-                    postUrl="/blog"
+                    postUrl={`/blog/${post.id}`}
                   />
                 );
               })}
