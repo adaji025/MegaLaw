@@ -20,7 +20,7 @@ const Navbar = ({ textColor }) => {
   const checkColor = STYLES.includes(textColor) ? textColor : STYLES[0];
 
   const changeBg = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY >= 400) {
       setNavBg(true);
     }else {

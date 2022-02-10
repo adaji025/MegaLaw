@@ -1,15 +1,17 @@
 import { useRouter } from "next/router";
 import React from "react";
+import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
-import { Blog as blog} from "../../utils/Blog";
+import { Blog as blog } from "../../utils/Blog";
 import BlogPost from "../../components/BlogPost/BlogPost";
+import { API_URL } from "../../config/constant";
 
-const Blog = () => {
-  const router = useRouter()
+const Blog = ({ posts }) => {
+  const router = useRouter();
 
   let settings_sm = {
     dot: true,
@@ -20,6 +22,7 @@ const Blog = () => {
     autoplay: true,
     autoplaySpeed: 2000,
   };
+  console.log(posts.data);
   return (
     <div>
       <Navbar textColor="megaDark" />
@@ -61,7 +64,11 @@ const Blog = () => {
           <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog image"
+                  className="card-img-top"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -74,7 +81,7 @@ const Blog = () => {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -84,7 +91,11 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog image"
+                  className="card-img-top"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -97,7 +108,7 @@ const Blog = () => {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -107,7 +118,11 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog image"
+                  className="card-img-top"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -120,7 +135,7 @@ const Blog = () => {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -130,7 +145,11 @@ const Blog = () => {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog image" className="card-img-top" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog image"
+                  className="card-img-top"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -143,7 +162,7 @@ const Blog = () => {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    onClick={() => router.push('/post')}
+                    onClick={() => router.push("/post")}
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -154,13 +173,17 @@ const Blog = () => {
           </div>
           <div className="container d-sm-none">
             <Slider {...settings_sm} className="slider">
-              {
-                blog.map((post, index) => {
-                  return(
-                    <BlogPost key={index} post={post} />
-                  )
-                })
-              }
+              {posts.data.map((post, index) => {
+                return (
+                  <BlogPost
+                    key={index}
+                    title={post?.attributes?.title}
+                    postImg={post.attributes.post_image?.data?.attributes?.url}
+                    postContent={post.attributes.content.slice(0, 180) + '...'}
+                    postUrl={'/post'}
+                  />
+                );
+              })}
             </Slider>
           </div>
         </div>
@@ -169,5 +192,19 @@ const Blog = () => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  // let postRes = null;
+
+  const postRes = await axios.get(
+    `https://megalaw.herokuapp.com/api/posts?populate=*`
+  );
+
+  return {
+    props: {
+      posts: postRes?.data,
+    },
+  };
+}
 
 export default Blog;

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
-import styles from "./Post.module.css";
+
 
 const Post = () => {
   const router = useRouter();
