@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import Modal from "react-modal";
+import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
-import particlesConfig from "../config/ParticleConfig";
-import Particles from "react-tsparticles";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Nav/Navbar";
 import Contact from "../components/Contact/Contact";
@@ -18,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Blog } from "../utils/Blog";
 import BlogPost from "../components/BlogPost/BlogPost";
 
-export default function Home() {
+export default function Home({posts}) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -39,12 +37,15 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 2000,
   };
-  
+
   return (
     <div className={styles.container}>
       <Head>
         <title>MegaLaw</title>
-        <meta name="description" content="law, litigation, Arbitration & Mediation, Perfection of legal Mortgages/Assignments" />
+        <meta
+          name="description"
+          content="law, litigation, Arbitration & Mediation, Perfection of legal Mortgages/Assignments"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -59,7 +60,10 @@ export default function Home() {
                     <p className={`poppins-bold opacity-50 ${styles.welcome}`}>
                       WELCOME TO MEGA LAW
                     </p>
-                    <h2 className={`poppins-bold ${styles.inrotext}`} data-aos="zoom-in">
+                    <h2
+                      className={`poppins-bold ${styles.inrotext}`}
+                      data-aos="zoom-in"
+                    >
                       We swiftly resolve legal matters.
                     </h2>
                     <span className={`mb-2 poppins-regular `}>
@@ -69,7 +73,8 @@ export default function Home() {
                     </span>
                     <button
                       className={`d-block mt-3 btn text-white ${styles.btn}`}
-                      onClick={() => setIsOpen(true)} data-aos="flip-right"
+                      onClick={() => setIsOpen(true)}
+                      data-aos="flip-right"
                     >
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="text-start">
@@ -93,8 +98,16 @@ export default function Home() {
               <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
                 <img src="./img/man.png" alt="megalaw" className={styles.one} />
                 <img src="./img/man.png" alt="megalaw" className={styles.two} />
-                <img src="./img/man.png" alt="megalaw" className={styles.three} />
-                <img src="./img/man.png" alt="megalaw" className={styles.four} />
+                <img
+                  src="./img/man.png"
+                  alt="megalaw"
+                  className={styles.three}
+                />
+                <img
+                  src="./img/man.png"
+                  alt="megalaw"
+                  className={styles.four}
+                />
               </div>
             </div>
           </div>
@@ -103,9 +116,6 @@ export default function Home() {
           <img src="./img/switch-icon.svg" alt="switch" className="img-fluid" />
         </div>
       </section>
-      {/* <div className="d-sm-none">
-      <Particles params={particlesConfig} id="ts"></Particles>
-      </div> */}
       <section id="practices" className={styles.practices}>
         <Container className="py-5">
           <Row>
@@ -215,13 +225,19 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center px-4 px-sm-3 ">
-            <div className="position-relative mb-5">
-                    <div className={`mw-80 mh-80 ${styles.img_bg}`}></div>
-                    <img src="./img/man.png" alt="megalaw" className="img-fluid mw-80" />
-                  </div>
+              <div className="position-relative mb-5">
+                <div className={`mw-80 mh-80 ${styles.img_bg}`}></div>
+                <img
+                  src="./img/man.png"
+                  alt="megalaw"
+                  className="img-fluid mw-80"
+                />
+              </div>
             </div>
             <div className="col-lg-6 d-flex flex-column justify-content-center pb-5 px-4 px-sm-1 ">
-              <h3 className="poppins-bold pt-3">We are devoted to our clients.</h3>
+              <h3 className="poppins-bold pt-3">
+                We are devoted to our clients.
+              </h3>
               <p className="mega-law-muted poppins-medium">
                 {" "}
                 But I Must Explain To You How All This Mistaken Idea Of
@@ -260,8 +276,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
-        <div className="container py-5"    data-aos="fade-up">
+
+        <div className="container py-5" data-aos="fade-up">
           <div className="row">
             <div className="col-lg-6">
               <h3 className="poppins-bold">What Our Clients Say</h3>
@@ -278,7 +294,11 @@ export default function Home() {
                 <div className="col-lg-5 d-flex justify-content-center pb-5">
                   <div className="position-relative mb-5 d-none d-sm-block">
                     <div className={styles.img_bg}></div>
-                    <img src="./img/man.png" alt="megalaw" className="img-fluid" />
+                    <img
+                      src="./img/man.png"
+                      alt="megalaw"
+                      className="img-fluid"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -343,7 +363,12 @@ export default function Home() {
           <div className="row d-none d-sm-flex">
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog image" className="card-img-top"  data-aos="flip-left" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog image"
+                  className="card-img-top"
+                  data-aos="flip-left"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -366,7 +391,12 @@ export default function Home() {
             </div>
             <div className="col-md-6">
               <div className="card bg-transparent border-0">
-                <img src="./img/blog.png" alt="blog" className="card-img-top"  data-aos="flip-right" />
+                <img
+                  src="./img/blog.png"
+                  alt="blog"
+                  className="card-img-top"
+                  data-aos="flip-right"
+                />
                 <div className="card-body">
                   <h5 className="poppins-medium">
                     How Fintech Can Stimulate Financial Inclusion: Challenges
@@ -379,7 +409,7 @@ export default function Home() {
                     sea to the level of the spectator on
                   </p>
                   <a
-href="#"
+                    href="#"
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -390,13 +420,15 @@ href="#"
           </div>
           <div className="container d-sm-none">
             <Slider {...settings_sm}>
-              {
-                Blog.map((post, index) => {
-                  return(
-                    <BlogPost key={index} post={post} />
-                  )
-                })
-              }
+              {posts.data.map((post, index) => {
+                return <BlogPost
+                key={index}
+                title={post?.attributes?.title}
+                postImg={post.attributes.post_image?.data?.attributes?.url}
+                postContent={post.attributes.content.slice(0, 180) + '...'}
+                postUrl="/blog"
+              />;
+              })}
             </Slider>
           </div>
         </div>
@@ -414,4 +446,18 @@ href="#"
       <Footer />
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  // let postRes = null;
+
+  const postRes = await axios.get(
+    `https://megalaw.herokuapp.com/api/posts?populate=*`
+  );
+
+  return {
+    props: {
+      posts: postRes?.data,
+    },
+  };
 }
