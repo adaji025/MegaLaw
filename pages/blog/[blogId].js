@@ -44,15 +44,15 @@ const Post = ({post}) => {
               <div className="d-flex align-items-center">
                 <div className={styles.authorContainer}>
                   <img
-                    src="./img/man.png"
+                    src={post.data?.attributes.author_image?.data?.attributes.url}
                     alt="megalaw"
                     className="img-fluid rounded-circle ms-3 my-auto"
                   />
                 </div>
                 <span className="ms-4">
-                  <span className="poppins-bold d-block">Eva Allordia</span>
+                  <span className="poppins-bold d-block">{post.data.attributes.author_name}</span>
                   <span className="poppins-medium opacity-50 fs-16">
-                    Associate
+                    {post.data.attributes.author_title}
                   </span>
                 </span>
               </div>
