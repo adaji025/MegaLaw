@@ -62,114 +62,20 @@ const Blog = ({ posts }) => {
             </div>
           </div>
           <div className="row d-none d-sm-flex">
-            <div className="col-md-6">
-              <div className="card bg-transparent border-0">
-                <img
-                  src="./img/blog.png"
-                  alt="blog image"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h5 className="poppins-medium">
-                    How Fintech Can Stimulate Financial Inclusion: Challenges
-                    And Opportunities.
-                  </h5>
-                  <p className="poppins-medium opacity-50 pt-1">
-                    Apparently we had reached a great height in the atmosphere,
-                    for the sky was a dead black, and the stars had ceased to
-                    twinkle. By the same illusion which lifts the horizon of the
-                    sea to the level of the spectator on
-                  </p>
-                  <a
-                    onClick={() => router.push("/post")}
-                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
-                  >
-                    Read more <span className="fs-2 ps-2">&#8594;</span>
-                  </a>
+          {posts.data.map((post, index) => {
+              return (
+                <div className="col-md-6" key={index}>
+                  <BlogPost
+                    key={index}
+                    title={post?.attributes?.title}
+                    postImg={post.attributes.post_image?.data?.attributes?.url}
+                    postContent={post.attributes.content.slice(0, 180) + "..."}
+                    postUrl={`/blog/${post.id}`}
+                  />
+                  ;
                 </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card bg-transparent border-0">
-                <img
-                  src="./img/blog.png"
-                  alt="blog image"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h5 className="poppins-medium">
-                    How Fintech Can Stimulate Financial Inclusion: Challenges
-                    And Opportunities.
-                  </h5>
-                  <p className="poppins-medium opacity-50 pt-1">
-                    Apparently we had reached a great height in the atmosphere,
-                    for the sky was a dead black, and the stars had ceased to
-                    twinkle. By the same illusion which lifts the horizon of the
-                    sea to the level of the spectator on
-                  </p>
-                  <a
-                    onClick={() => router.push("/post")}
-                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
-                  >
-                    Read more <span className="fs-2 ps-2">&#8594;</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card bg-transparent border-0">
-                <img
-                  src="./img/blog.png"
-                  alt="blog image"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h5 className="poppins-medium">
-                    How Fintech Can Stimulate Financial Inclusion: Challenges
-                    And Opportunities.
-                  </h5>
-                  <p className="poppins-medium opacity-50 pt-1">
-                    Apparently we had reached a great height in the atmosphere,
-                    for the sky was a dead black, and the stars had ceased to
-                    twinkle. By the same illusion which lifts the horizon of the
-                    sea to the level of the spectator on
-                  </p>
-                  <a
-                    onClick={() => router.push("/post")}
-                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
-                  >
-                    Read more <span className="fs-2 ps-2">&#8594;</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card bg-transparent border-0">
-                <img
-                  src="./img/blog.png"
-                  alt="blog image"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h5 className="poppins-medium">
-                    How Fintech Can Stimulate Financial Inclusion: Challenges
-                    And Opportunities.
-                  </h5>
-                  <p className="poppins-medium opacity-50 pt-1">
-                    Apparently we had reached a great height in the atmosphere,
-                    for the sky was a dead black, and the stars had ceased to
-                    twinkle. By the same illusion which lifts the horizon of the
-                    sea to the level of the spectator on
-                  </p>
-                  <a
-                    onClick={() => router.push("/post")}
-                    className="pb-2 tomato-color opacity-50 d-flex align-items-center"
-                  >
-                    Read more <span className="fs-2 ps-2">&#8594;</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
           <div className="container d-sm-none">
             <Slider {...settings_sm} className="slider">
@@ -180,7 +86,7 @@ const Blog = ({ posts }) => {
                     title={post?.attributes?.title}
                     postImg={post.attributes.post_image?.data?.attributes?.url}
                     postContent={post.attributes.content.slice(0, 180) + '...'}
-                    postUrl={'#'}
+                    postUrl={`/blog/${post.id}`}
                   />
                 );
               })}
