@@ -180,7 +180,7 @@ const Blog = ({ posts }) => {
                     title={post?.attributes?.title}
                     postImg={post.attributes.post_image?.data?.attributes?.url}
                     postContent={post.attributes.content.slice(0, 180) + '...'}
-                    postUrl={'/post'}
+                    postUrl={'#'}
                   />
                 );
               })}
