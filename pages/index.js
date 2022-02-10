@@ -356,7 +356,7 @@ export default function Home() {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    
+                    href="#"
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
@@ -379,7 +379,7 @@ export default function Home() {
                     sea to the level of the spectator on
                   </p>
                   <a
-                    
+href="#"
                     className="pb-2 tomato-color opacity-50 d-flex align-items-center"
                   >
                     Read more <span className="fs-2 ps-2">&#8594;</span>
