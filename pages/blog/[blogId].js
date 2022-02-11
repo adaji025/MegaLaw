@@ -47,7 +47,9 @@ const Post = ({ post, posts }) => {
               </div>
               <p className="poppins-medium opacity-50">
                 {/* {post.data.attributes.content} */}
-                <ReactMarkdown children={post.data.attributes.content} />
+                <ReactMarkdown>
+                {post.data.attributes.content}
+                </ReactMarkdown>
               </p>
 
               <div className="d-flex align-items-center">
