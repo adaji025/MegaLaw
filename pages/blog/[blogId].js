@@ -6,9 +6,13 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
 import styles from "../../styles/SinglePost.module.css";
 import BlogPost from "../../components/BlogPost/BlogPost";
+import markdownIt from "markdown-it";
+import ReactMarkdown from "react-markdown";
+
+
 
 const Post = ({ post, posts }) => {
-  console.log(post);
+
   const router = useRouter();
   return (
     <div>
@@ -42,7 +46,8 @@ const Post = ({ post, posts }) => {
                 />
               </div>
               <p className="poppins-medium opacity-50">
-                {post.data.attributes.content}
+                {/* {post.data.attributes.content} */}
+                <ReactMarkdown children={post.data.attributes.content} />
               </p>
 
               <div className="d-flex align-items-center">
