@@ -6,7 +6,6 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
 import styles from "../../styles/SinglePost.module.css";
 import BlogPost from "../../components/BlogPost/BlogPost";
-import markdownIt from "markdown-it";
 import ReactMarkdown from "react-markdown";
 
 

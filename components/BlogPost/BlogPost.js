@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import MarkDownIt from "markdown-it";
 
 const BlogPost = ({ title, postImg, postContent, postUrl }) => {
   return (
