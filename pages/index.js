@@ -190,7 +190,7 @@ export default function Home({ posts }) {
                         <p className="poppins-medium opacity-50">
                           Litigation We make every effort to prevent problems
                           and utilize litigation only as a last resort, thanks
-                          to our familiarity with the client's business. Our
+                          to our familiarity with the clients business. Our
                           litigation expertise includes employment, debt
                           collection, banking and finance, and other fields. We
                           have certified and experienced members that can
@@ -391,7 +391,7 @@ export default function Home({ posts }) {
                                 type="button"
                                 data-target="#slideshow"
                                 data-slide-to="0"
-                                class="active"
+                                className="active"
                               >
                                 Paul Davis
                               </a>
@@ -455,7 +455,7 @@ export default function Home({ posts }) {
                                 type="button"
                                 data-target="#slideshow"
                                 data-slide-to="0"
-                                class="active"
+                                className="active"
                               >
                                 Paul Davis
                               </a>
@@ -519,7 +519,7 @@ export default function Home({ posts }) {
                                 type="button"
                                 data-target="#slideshow"
                                 data-slide-to="0"
-                                class="active"
+                                className="active"
                               >
                                 Paul Davis
                               </a>
