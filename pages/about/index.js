@@ -62,12 +62,7 @@ const About = () => {
               We are full-service Law Firm that Capitalizes on its skilled
               professionals and technology to provived excellent legal services
               to its client
-              devoted to providing excellent customer service and
-              building long term connections. Our main objective is to serve our
-              clients with high quality and efficient services. We offer not
-              just competent legal advice but also effective business solutions
-              relevant to our customers individual circumstances because of our
-              specialization in practice areas and industrial sectors.
+              
             </p>
             <button
               className={`d-block btn text-white ${styles.btn}`}
@@ -129,15 +124,13 @@ const About = () => {
                 <div className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1  ps-lg-5">
                   <h3 className="poppins-bold">Our vision</h3>
                   <p className="poppins-medium opacity-50">
-                    But I Must Explain To You How All This Mistaken Idea Of
-                    Denouncing Pleasure And Praising Pain Was Born And I Will
-                    Give You A Complete Account Of The System, And Expound The
-                    Actual Teachings Of The Great Explorer Of The Truth, The
-                    Master-Builder Of Human Happiness. No One Rejects, Dislikes,
-                    Or Avoids Pleasure Itself, Because It Is Pleasure, But
-                    Because Those Who Do Not Know How To Pursue Pleasure
-                    Rationally Encounter Consequences That Are Extremely
-                    Painful. Nor Again Is There
+                  We are devoted to providing excellent customer service and
+                building long term connections. Our main objective is to serve
+                our clients with high quality and efficient services. We offer
+                not just competent legal advice but also effective business
+                solutions relevant to our customers individual circumstances
+                because of our specialization in practice areas and industrial
+                sectors.
                   </p>
                 </div>
               </div>

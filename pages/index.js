@@ -249,19 +249,15 @@ export default function Home({ posts }) {
               </h3>
               <p className="mega-law-muted poppins-medium">
                 {" "}
-                But I Must Explain To You How All This Mistaken Idea Of
-                Denouncing Pleasure And Praising Pain Was Born And I Will Give
-                You A Complete Account Of The System, And Expound The Actual
-                Teachings Of The Great Explorer Of The Truth, The Master-Builder
-                Of Human Happiness. No One Rejects, Dislikes, Or Avoids Pleasure
-                Itself, Because It Is Pleasure, But Because Those Who Do Not
-                Know How To Pursue Pleasure Rationally Encounter Consequences
-                That Are Painful. Nor Again Is There Anyone Who Loves Or Pursues
-                Or Desires To Obtain Pain Of Itself, Because It Is Pain, But
-                Because Occasionally Circumstances Occur In Which Toil And Pain
-                Can
+                We are devoted to providing excellent customer service and
+                building long term connections. Our main objective is to serve
+                our clients with high quality and efficient services. We offer
+                not just competent legal advice but also effective business
+                solutions relevant to our customers individual circumstances
+                because of our specialization in practice areas and industrial
+                sectors.
               </p>
-              <a href="#" className="tomato-color pb-2 poppins-medium">
+              <a onClick={() => router.push('/about')} className={`tomato-color pb-2 poppins-medium ${styles.read}`}>
                 Read more...
               </a>
               <button
@@ -389,7 +385,6 @@ export default function Home({ posts }) {
                               <a
                                 className="px-3 poppins-medium text-secondary text-decoration-underline text-dak active"
                                 type="button"
-                                
                               >
                                 Paul Davis
                               </a>
@@ -512,7 +507,6 @@ export default function Home({ posts }) {
                               <a
                                 className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
                                 type="button"
-                                
                               >
                                 Paul Davis
                               </a>

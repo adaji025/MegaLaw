@@ -57,7 +57,9 @@
   background: var(--mega-law-ash);
   overflow: hidden;
 }
-
+.read {
+  cursor: pointer;
+}
 .practicesImg {
   width: 20%;
 }
