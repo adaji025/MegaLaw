@@ -62,6 +62,12 @@ const About = () => {
               We are full-service Law Firm that Capitalizes on its skilled
               professionals and technology to provived excellent legal services
               to its client
+              devoted to providing excellent customer service and
+              building long term connections. Our main objective is to serve our
+              clients with high quality and efficient services. We offer not
+              just competent legal advice but also effective business solutions
+              relevant to our customers individual circumstances because of our
+              specialization in practice areas and industrial sectors.
             </p>
             <button
               className={`d-block btn text-white ${styles.btn}`}
@@ -155,9 +161,11 @@ const About = () => {
             <div className="container">
               <div className="row">
                 {Teams.map((team, i) => {
-                  return <div className="col-md-6 col-lg-3 py-3" key={i}>
-                    <Team team={team}/>
-                  </div>;
+                  return (
+                    <div className="col-md-6 col-lg-3 py-3" key={i}>
+                      <Team team={team} />
+                    </div>
+                  );
                 })}
               </div>
             </div>
