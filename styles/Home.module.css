@@ -55,7 +55,7 @@
 .client,
 .blog {
   background: var(--mega-law-ash);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .practicesImg {
@@ -102,6 +102,10 @@
 .welcome {
   margin-top: 4rem;
 }
+.practices .card {
+  min-height: 460px !important;
+}
+
 @media (min-width: 1400px) {
   .inrotext {
     font-size: 50px;

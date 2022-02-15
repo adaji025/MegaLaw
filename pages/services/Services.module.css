@@ -27,11 +27,12 @@
     background: var(--mega-law-tomato) !important;
     border-radius: 0 !important;    
   }
-
+@media (max-width: 1200px) {
+    .our_services {
+        font-size: 44px;
+    }
+}
   @media (max-width: 992px) {
-      .our_services {
-          font-size: 44px;
-      }
       .h_200 {
           height: 300px !important;
           display: flex;

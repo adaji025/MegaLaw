@@ -32,10 +32,12 @@ const Services = () => {
                         Our Services
                       </h2>
                       <p
-                        className={`fs-4 ps-md-2 poppins-medium text-white text-center text-md-start`}
+                        className={`fs-5 ps-md-2 poppins-medium text-white text-center text-md-start`}
                       >
-                        But I must explain to you how all this mistaken idea of
-                        denouncing pleasure and
+                        At Megalaw, we provide legal advice and counsel; our
+                        knowledge allows us to devise winning tactics for issues
+                        behalf of our clients. We give concise, accurate and
+                        intelligent solutions by cutting through challenges.
                       </p>
                     </div>
                   </div>
@@ -150,10 +152,10 @@ const Services = () => {
       <div className="container">
         {/* <div className="row justify-content-center">
           <div className="col-md-12"> */}
-            <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)} />
-            </div>
-          {/* </div>
+        <div>
+          <Contact open={isOpen} close={() => setIsOpen(false)} />
+        </div>
+        {/* </div>
         </div> */}
       </div>
       <Footer />

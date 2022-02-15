@@ -5,18 +5,23 @@ export const Teams = [
         image: './img/man.png'
     },
     {
-        name: 'Mohammed Ndgana',
-        title: 'Principal Partner',
+        name: 'Yakubu Maryam',
+        title: 'Associate',
         image: './img/man.png'
     },
     {
-        name: 'Mohammed Ndgana',
-        title: 'Principal Partner',
+        name: 'Aisha Yusuf',
+        title: 'Associate',
         image: './img/man.png'
     },
     {
-        name: 'Mohammed Ndgana',
-        title: 'Principal Partner',
+        name: 'Obi Joseph Akogwu',
+        title: 'Associate',
+        image: './img/man.png'
+    },
+    {
+        name: 'Auta Friday',
+        title: 'Associate',
         image: './img/man.png'
     }
 ]

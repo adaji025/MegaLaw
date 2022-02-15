@@ -121,9 +121,9 @@ export default function Home({ posts }) {
             <Col md={5}>
               <h2 className="pb-2 px-2 poppins-bold">Our Practices</h2>
               <p className="mega-law-muted poppins-medium px-2">
-                But I Must Explain To You How All This Mistaken Idea Of
-                Denouncing Pleasure And Praising Pain Was Born And I Will Give
-                You A Complete Account Of The System, And Expound
+                Our industry strengths at Megalaw include; property law,
+                corporate and commercial, arbitration and mediation and
+                litigation.
               </p>
             </Col>
             <Col md={7}>
@@ -131,7 +131,7 @@ export default function Home({ posts }) {
                 <div className="row">
                   <div className="col-lg-6">
                     <div
-                      className="card border-0 shadow-sm px-4 mb-lg-5"
+                      className={`card border-0 shadow-sm px-4 mb-lg-5 ${styles.card}`}
                       data-aos="fade-down"
                     >
                       <img
@@ -142,16 +142,19 @@ export default function Home({ posts }) {
                       <div className="card-body">
                         <h5 className="poppins-bold">Property Law Practice</h5>
                         <p className="poppins-medium opacity-50">
-                          But I must explain to you how all this mistaken idea
-                          of denouncing p leasure and praising pain was born and
-                          I will
+                          Our property law experts have a wide variety of
+                          experience and skill in delivering targeted business
+                          advice on all areas of commercial and residential
+                          property transactions. We also have great experience
+                          in real estate finance and provide mortgage loan
+                          advice to both lenders and borrowers.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-6 pb-3">
                     <div
-                      className="card border-0 shadow-sm px-4 mt-4"
+                      className={`card border-0 shadow-sm px-4 mt-4 ${styles.card}`}
                       data-aos="fade-left"
                     >
                       <img
@@ -164,16 +167,17 @@ export default function Home({ posts }) {
                           Corporate & Commercial Law
                         </h5>
                         <p className="poppins-medium opacity-50">
-                          But I must explain to you how all this mistaken idea
-                          of denouncing pleasure and praising pain was born and
-                          I will
+                          We can help with a wide range of transactions and
+                          corporate finance because of our significant knowledge
+                          and expertise. We offer corporate consultancy services
+                          to domestic businesses in nigeria.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-6 pb-3 nmb-2">
                     <div
-                      className="card border-0 shadow-sm px-4"
+                      className={`card border-0 shadow-sm px-4 ${styles.card}`}
                       data-aos="fade-right"
                     >
                       <img
@@ -184,16 +188,20 @@ export default function Home({ posts }) {
                       <div className="card-body">
                         <h5 className="poppins-bold">Litigation</h5>
                         <p className="poppins-medium opacity-50">
-                          But I must explain to you how all this mistaken idea
-                          of denouncing pleasure and praising pain was born and
-                          I will
+                          Litigation We make every effort to prevent problems
+                          and utilize litigation only as a last resort, thanks
+                          to our familiarity with the client's business. Our
+                          litigation expertise includes employment, debt
+                          collection, banking and finance, and other fields. We
+                          have certified and experienced members that can
+                          represent you in any Nigerian court.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-6 pb-3">
                     <div
-                      className="card border-0 shadow-sm px-4 mt-4"
+                      className={`card border-0 shadow-sm px-4 ${styles.card}`}
                       data-aos="fade-up"
                     >
                       <img
@@ -206,9 +214,11 @@ export default function Home({ posts }) {
                           Arbitration & Mediation
                         </h5>
                         <p className="poppins-medium opacity-50">
-                          But I must explain to you how all this mistaken idea
-                          of denouncing pleasure and praising pain was born and
-                          I will
+                          At Megalaw, we understand that not all conflicts need
+                          to be resolved in a courtroom, our team advocates the
+                          use of all ADR approaches, such as negotiation,
+                          conciliation, mediation, and arbitration, when and
+                          where they are suitable.
                         </p>
                       </div>
                     </div>
@@ -376,11 +386,15 @@ export default function Home({ posts }) {
                             </span>
                             <div className="py-3">
                               {/* <Link href="#"> */}
-                                <a className="px-3 poppins-medium text-secondary text-decoration-underline text-dak active"
+                              <a
+                                className="px-3 poppins-medium text-secondary text-decoration-underline text-dak active"
                                 type="button"
-                                data-target="#slideshow" data-slide-to="0" class="active">
-                                  Paul Davis
-                                </a>
+                                data-target="#slideshow"
+                                data-slide-to="0"
+                                class="active"
+                              >
+                                Paul Davis
+                              </a>
                               {/* </Link> */}
                               <Link href="#">
                                 <a className="px-3 poppins-medium text-secondary text-decoration-underline">
@@ -436,11 +450,15 @@ export default function Home({ posts }) {
                             </span>
                             <div className="py-3">
                               {/* <Link href="#"> */}
-                                <a className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
-                                 type="button"
-                                 data-target="#slideshow" data-slide-to="0" class="active">
-                                  Paul Davis
-                                </a>
+                              <a
+                                className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
+                                type="button"
+                                data-target="#slideshow"
+                                data-slide-to="0"
+                                class="active"
+                              >
+                                Paul Davis
+                              </a>
                               {/* </Link> */}
                               <Link href="#">
                                 <a className="px-3 poppins-medium text-secondary text-decoration-underline">
@@ -496,11 +514,15 @@ export default function Home({ posts }) {
                             </span>
                             <div className="py-3">
                               {/* <Link href="#"> */}
-                                <a className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
-                                 type="button"
-                                 data-target="#slideshow" data-slide-to="0" class="active">
-                                  Paul Davis
-                                </a>
+                              <a
+                                className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
+                                type="button"
+                                data-target="#slideshow"
+                                data-slide-to="0"
+                                class="active"
+                              >
+                                Paul Davis
+                              </a>
                               {/* </Link> */}
                               <Link href="#">
                                 <a className="px-3 poppins-medium text-secondary text-decoration-underline">

@@ -1,0 +1,12 @@
+.img_bg {
+    background: var(--mega-law-tomato);
+    opacity: 0.1;
+    width: 425px;
+    height: 425px;
+  }
+.team_title {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: transparent linear-gradient(180deg, #0A0F1400 0%, #05070900 54%, #000000 100%) 0% 0% no-repeat padding-box;
+}

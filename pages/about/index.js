@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Teams } from "../../utils/Teams";
+import Team from "../../components/Team/Team";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,19 +34,18 @@ const About = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.aboutHero}>
-      <Navbar />
+        <Navbar />
         <div className={styles.aboutHero_1}>
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-8">
-              <div className={styles.about}>
-                <h2>About Megalaw</h2>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-8">
+                <div className={styles.about}>
+                  <h2>About Megalaw</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        
       </div>
 
       <div className="container py-5 mt-5">
@@ -154,74 +154,11 @@ const About = () => {
           <div className="col-md-11">
             <div className="container">
               <div className="row">
-                <div className="col-md-6 col-lg-3 py-3">
-                  <div className="position-relative">
-                    <img
-                      src="./img/man.png"
-                      alt="team"
-                      className={`img-fluid ${styles.team_img}`}
-                    />
-                    <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">
-                        Mohammed Ndgana
-                      </span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">
-                        Principal Partner
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 py-3">
-                  <div className="position-relative">
-                    <img
-                      src="./img/man.png"
-                      alt="team"
-                      className={`img-fluid ${styles.team_img}`}
-                    />
-                    <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">
-                        Mohammed Ndgana
-                      </span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">
-                        Principal Partner
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 py-3">
-                  <div className="position-relative">
-                    <img
-                      src="./img/man.png"
-                      alt="team"
-                      className={`img-fluid ${styles.team_img}`}
-                    />
-                    <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">
-                        Mohammed Ndgana
-                      </span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">
-                        Principal Partner
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 col-lg-3 py-3">
-                  <div className="position-relative">
-                    <img
-                      src="./img/man.png"
-                      alt="team"
-                      className={`img-fluid ${styles.team_img}`}
-                    />
-                    <div className={`py-2 ${styles.team_title}`}>
-                      <span className="d-block text-light px-3 poppins-bold">
-                        Mohammed Ndgana
-                      </span>
-                      <span className="d-block text-light px-3 poppins-medium text-lighter">
-                        Principal Partner
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                {Teams.map((team, i) => {
+                  return <div className="col-md-6 col-lg-3 py-3" key={i}>
+                    <Team team={team}/>
+                  </div>;
+                })}
               </div>
             </div>
           </div>
