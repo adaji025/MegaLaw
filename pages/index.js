@@ -201,7 +201,7 @@ export default function Home({ posts }) {
                   </div>
                   <div className="col-lg-6 pb-3">
                     <div
-                      className={`card border-0 shadow-sm px-4 mt-3 ${styles.card}`}
+                      className={`card border-0 shadow-sm px-4 mt-2 ${styles.card}`}
                       data-aos="fade-up"
                     >
                       <img
