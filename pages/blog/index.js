@@ -9,6 +9,7 @@ import Navbar from "../../components/Nav/Navbar";
 import { Blog as blog } from "../../utils/Blog";
 import BlogPost from "../../components/BlogPost/BlogPost";
 import { API_URL } from "../../config/constant";
+import FeaturedPost from "../../components/FeaturedPost/FeaturedPost";
 
 const Blog = ({ posts }) => {
   const router = useRouter();
@@ -28,25 +29,28 @@ const Blog = ({ posts }) => {
       <Navbar textColor="megaDark" />
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
-          <div className="col-md-6">
-            <span className="tomato-color opacity-75 poppins-medium">
-              FEATURED POST
-            </span>
-            <h3 className="poppins-bold pe-lg-5">
-              How to build a world-class business brand
-            </h3>
-            <span className="poppins-regular">
-              Apparently we had reached a great height in the atmosphere, for
-              the sky was a dead black, and the stars had ceased to twinkle. By
-              the same illusion which lifts the horizon of the sea to the level
-              of the spectator on a hillside, the sable cloud{" "}
-            </span>
-            <a href="#" className="pb-2 tomato-color d-flex align-items-center">
-              Read more <span className="fs-2 ps-2">&#8594;</span>
-            </a>
+        <div id="justIn" className="carousel slide" data-bs-ride="carousel">
+         <div className="carousel-inner">
+            {posts === 0 && "<h3>No posts to show</h3>"}
+            {posts.data?.map((post, index) => {
+              return (
+                // <Link href={`/blog/${post.id}`} key={index}>
+                  <div
+                    className={
+                      index === 0 ? "carousel-item active" : "carousel-item"
+                    }
+                  >
+                    <FeaturedPost
+                     title={post?.attributes?.title}
+                     postImg={post.attributes.post_image?.data?.attributes?.url}
+                     postContent={post.attributes.content.slice(0, 180) + "..."}
+                     postUrl={`/blog/${post.id}`}
+                    />
+                  </div>
+                // </Link>
+              );
+            })}
           </div>
-          <div className="col-md-6 d-flex justify-content-end">
-            <img src="./img/rect-sm.svg" alt="megalaw" className="img-fluid" />
           </div>
         </div>
       </div>
