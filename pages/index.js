@@ -389,9 +389,7 @@ export default function Home({ posts }) {
                               <a
                                 className="px-3 poppins-medium text-secondary text-decoration-underline text-dak active"
                                 type="button"
-                                data-target="#slideshow"
-                                data-slide-to="0"
-                                className="active"
+                                
                               >
                                 Paul Davis
                               </a>
@@ -453,9 +451,6 @@ export default function Home({ posts }) {
                               <a
                                 className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
                                 type="button"
-                                data-target="#slideshow"
-                                data-slide-to="0"
-                                className="active"
                               >
                                 Paul Davis
                               </a>
@@ -517,9 +512,7 @@ export default function Home({ posts }) {
                               <a
                                 className="px-3 poppins-medium text-secondary text-decoration-underline text-dak"
                                 type="button"
-                                data-target="#slideshow"
-                                data-slide-to="0"
-                                className="active"
+                                
                               >
                                 Paul Davis
                               </a>
