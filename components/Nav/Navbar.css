@@ -95,7 +95,7 @@
         top: 0;
         right: 0;
         margin-top: 40px;
-        transform: translate(-100%, 30%);
+        transform: translate(-10%, 30%);
         cursor: pointer;
         z-index: 10;
     }

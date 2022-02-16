@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -44,9 +45,9 @@ const Navbar = ({ textColor }) => {
         </div>
         <div className={`px-1 px-sm-0 menuIcon `} onClick={handleClick}>
           {clicked ? (
-            <img src="./img/togglerClose.svg" className="img-fluid" />
+            <Image width={50} height={10} src="/img/togglerClose.svg" className="img-fluid" />
           ) : (
-            <img src="./img/togglerOpen.svg" className="" />
+            <Image width={50} height={10} src="/img/togglerOpen.svg" className="" />
           )}
         </div>
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
