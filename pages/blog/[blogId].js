@@ -21,7 +21,7 @@ const Post = ({ post, posts }) => {
         <div className="row">
           <div className="col-xl-11">
             <div className="container">
-              <div className={styles.back}>
+              <div className={styles.back} onClick={() => router.push('/')}>
                 <Image
                 width={20}
                 height={20}

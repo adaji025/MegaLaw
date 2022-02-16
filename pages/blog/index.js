@@ -39,6 +39,7 @@ const Blog = ({ posts }) => {
                     className={
                       index === 0 ? "carousel-item active" : "carousel-item"
                     }
+                    key={index}
                   >
                     <FeaturedPost
                      title={post?.attributes?.title}
