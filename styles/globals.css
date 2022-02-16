@@ -84,6 +84,7 @@ a {
   width: 60px !important;
   height: 60px !important;
 }
+
 @media (min-width: 992px) {
   .nmb-2 {
     margin-top: -1.2rem;

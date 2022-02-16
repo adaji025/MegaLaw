@@ -34,7 +34,6 @@ const Blog = ({ posts }) => {
             {posts === 0 && "<h3>No posts to show</h3>"}
             {posts.data?.map((post, index) => {
               return (
-                // <Link href={`/blog/${post.id}`} key={index}>
                   <div
                     className={
                       index === 0 ? "carousel-item active" : "carousel-item"
@@ -48,7 +47,6 @@ const Blog = ({ posts }) => {
                      postUrl={`/blog/${post.id}`}
                     />
                   </div>
-                // </Link>
               );
             })}
           </div>

@@ -21,3 +21,6 @@
   .testimonial_text {
     font-size: 32px;
   }
+  .testimonial a:hover {
+    text-decoration: underline !important;
+  }
