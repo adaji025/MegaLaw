@@ -1,7 +1,6 @@
 .back {
-    background: #0a0f14 0% 0% no-repeat padding-box;
-    opacity: 0.1;
-    /* display: inline-block; */
+    background: #F0F0F0;
+    /* opacity: 0.1; */
     width: 54px;
     height: 54px;
     display: flex;

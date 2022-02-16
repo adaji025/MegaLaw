@@ -1,0 +1,23 @@
+.testimonial {
+    max-width: 1560px;
+    min-height: 575px;
+    background: #d4d4d4;
+    display: flex;
+    align-items: center;
+  }
+  .client img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .img_bg {
+    background: var(--mega-law-tomato);
+    opacity: 0.1;
+    width: 425px;
+    height: 425px;
+  }
+  .testimonial_text {
+    font-size: 32px;
+  }

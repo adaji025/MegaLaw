@@ -294,62 +294,7 @@ export default function Home({ posts }) {
             </div>
           </div>
           <div className={styles.testimonial}>
-            {/* <div className=" p-1 p-sm-3">
-              <div className="row">
-                <div className="col-lg-5 d-flex justify-content-center pb-5">
-                  <div className="position-relative mb-5 d-none d-sm-block">
-                    <div className={styles.img_bg}></div>
-                    <img
-                      src="./img/man.png"
-                      alt="megalaw"
-                      className="img-fluid"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-11">
-                        <span
-                          className={`d-block poppins-regular ${styles.swift}`}
-                        >
-                          Swift & Professional
-                        </span>
-                        <span
-                          className={`poppins-medium ${styles.testimonial_text}`}
-                        >
-                          <span>“</span>MegaLaw helped me recover funds I was
-                          owed for a long time and the process was smooth and
-                          professional”
-                        </span>
-                        <div className="py-3">
-                          <Link href="#">
-                            <a className="px-3 poppins-medium text-secondary text-decoration-underline text-dak">
-                              Paul Davis
-                            </a>
-                          </Link>
-                          <Link href="#">
-                            <a className="px-3 poppins-medium text-secondary text-decoration-underline">
-                              Aisha Samson
-                            </a>
-                          </Link>
-                          <Link href="#">
-                            <a className="px-3 poppins-medium text-secondary text-decoration-underline">
-                              Alicia Jake
-                            </a>
-                          </Link>
-                          <Link href="#">
-                            <a className="px-3 poppins-medium text-secondary text-decoration-underline">
-                              Paul Davis
-                            </a>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            
             <Carousel>
               <Carousel.Item interval={1000}>
                 <div className=" p-1 p-sm-3">

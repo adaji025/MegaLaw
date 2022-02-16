@@ -7,6 +7,7 @@ import Navbar from "../../components/Nav/Navbar";
 import styles from "../../styles/SinglePost.module.css";
 import BlogPost from "../../components/BlogPost/BlogPost";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 
 
@@ -21,8 +22,10 @@ const Post = ({ post, posts }) => {
           <div className="col-xl-11">
             <div className="container">
               <div className={styles.back}>
-                <img
-                  src="./img/go-back.svg"
+                <Image
+                width={20}
+                height={20}
+                  src="/img/go-back.svg"
                   alt="blog"
                   className="img-fluid w-50"
                 />
