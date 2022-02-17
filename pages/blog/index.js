@@ -24,33 +24,20 @@ const Blog = ({ posts }) => {
     autoplaySpeed: 2000,
   };
   console.log(posts.data);
+  
+  const lastPost = posts.data.length-1
+  const latestPost= posts.data[lastPost]
+  console.log(lastPost);
+  console.log(latestPost);
   return (
     <div>
       <Navbar textColor="megaDark" />
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
-        <div id="justIn" className="carousel slide" data-bs-ride="carousel">
-         <div className="carousel-inner">
-            {posts === 0 && "<h3>No posts to show</h3>"}
-            {posts.data?.map((post, index) => {
-              return (
-                  <div
-                    className={
-                      index === 0 ? "carousel-item active" : "carousel-item"
-                    }
-                    key={index}
-                  >
-                    <FeaturedPost
-                     title={post?.attributes?.title}
-                     postImg={post.attributes.post_image?.data?.attributes?.url}
-                     postContent={post.attributes.content.slice(0, 180) + "..."}
-                     postUrl={`/blog/${post.id}`}
-                    />
-                  </div>
-              );
-            })}
-          </div>
-          </div>
+         <FeaturedPost title={latestPost.attributes.title}
+         postContent={latestPost.attributes.content.slice(0, 180) + '...'}
+         postImg={latestPost.attributes.post_image?.data.attributes.url}
+         postUrl={`/blog/${latestPost.id}`} />
         </div>
       </div>
       <section id="blog" className={`py-5`}>
