@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 .heroContainer {
-  height: 95vh;
+  height: 100vh;
   background: url(../public/img/dot.png);
   background-size: 100%;
   background-repeat: no-repeat;
