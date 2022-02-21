@@ -12,11 +12,16 @@
   background-color: var(--mega-law-dark);
   position: relative;
 }
-
+.megalaw_bg {
+  background-color: rgba(85, 21, 9, 0.712);
+  max-width: 460px;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
 .home_img {
   background-color: rgba(85, 21, 9, 0.712);
   position: relative;
-  /* max-width: 30vw; */
   margin-top: 300px;
   width: 80vw;
 }
@@ -125,15 +130,24 @@
   }
 }
 @media (min-width: 768px) {
-  .home_img {
+  .megalaw_bg {
+    margin-top: 150px;
+  }
+  /* .home_img {
     background-color: rgba(85, 21, 9, 0.712);
     position: relative;
     max-width: 30vw;
     margin-top: 150px;
     margin-left: 50px;
-  }
+  } */
 }
 @media (max-width: 768px) {
+  .megalaw_bg {
+    margin-top: 100px;
+  }
+  .welcome {
+    margin-top: 250px;
+  }
   .practices {
     margin-top: 12rem;
   }

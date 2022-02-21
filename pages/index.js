@@ -95,20 +95,23 @@ export default function Home({ posts }) {
               </div>
             </div>
             <div className="col-md-6 d-grid">
-              <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
-                <img src="./img/man.png" alt="megalaw" className={styles.one} />
-                <img src="./img/man.png" alt="megalaw" className={styles.two} />
+              <div className={styles.megalaw_bg}>
+                <img src="./img/megalaw1.PNG" alt="" className="img-fluid"/>
+              </div>
+              {/* <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
+                <img src="./img/second-lady.png" alt="megalaw" className={styles.one} />
+                <img src="./img/man-1.png" alt="megalaw" className={styles.two} />
                 <img
-                  src="./img/man.png"
+                  src="./img/first-lady.png"
                   alt="megalaw"
                   className={styles.three}
                 />
                 <img
-                  src="./img/man.png"
+                  src="./img/muhammed-ndagana.png"
                   alt="megalaw"
                   className={styles.four}
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
