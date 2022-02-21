@@ -96,7 +96,7 @@ export default function Home({ posts }) {
             </div>
             <div className="col-md-6 d-grid">
               <div className={styles.megalaw_bg}>
-                <img src="./img/megalaw1.PNG" alt="" className="img-fluid"/>
+                <img src="./img/megalaw1.png" alt="" className="img-fluid"/>
               </div>
               {/* <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
                 <img src="./img/second-lady.png" alt="megalaw" className={styles.one} />
