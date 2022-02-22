@@ -99,8 +99,13 @@ a {
   .nmt-2 {
     margin-top: -3rem !important;
   }
+  .mw-100 {
+    width: 100% !important;
+    /* margin-top: 2rem; */
+  }
 }
 @media (device-width: 912px) and (device-height: 1368px) {
+  
   .h_60 {
     height: 40vh;
   }

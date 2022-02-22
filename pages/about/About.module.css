@@ -1,5 +1,9 @@
 .hero {
-    background: var(--mega-law-ash);
+  height: 460px;
+    background: url(../../public/img/bg-group.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .5);
 }
 .aboutHero {
     height: 460px;
@@ -7,7 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position:  center;
-    background-color: var(--mega-law-dark);  
+    background-color: rgba(0, 0, 0, .8);
 }
 .about {
   height: 400px;

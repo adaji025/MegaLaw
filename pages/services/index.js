@@ -32,7 +32,7 @@ const Services = () => {
                         Our Services
                       </h2>
                       <p
-                        className={`fs-5 ps-md-2 poppins-medium text-white text-center text-md-start`}
+                        className={`fs-5 ps-md-2 poppins-medium text-white text-center text-md-start ${styles.services_text}`}
                       >
                         At Megalaw, we provide legal advice and counsel; our
                         knowledge allows us to devise winning tactics for issues
@@ -45,7 +45,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-md-6 py-2 d-flex justify-content-center">
-              <img src="./img/man.png" alt="megalaw" className="img-fluid" />
+              <img src="./img/megalaw-group.png" alt="megalaw" className="img-fluid w-75 mw-100" />
             </div>
           </div>
         </div>

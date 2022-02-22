@@ -95,7 +95,7 @@ export default function Home({ posts }) {
               </div>
             </div>
             <div className="col-md-6 d-grid">
-              <div className={styles.megalaw_bg}>
+              <div className={styles.megalaw_bg} data-aos="zoom-out">
                 <img src="./img/mega.png" alt="" className="img-fluid"/>
               </div>
               {/* <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
@@ -241,9 +241,9 @@ export default function Home({ posts }) {
               <div className="position-relative mb-5">
                 <div className={`mw-80 mh-80 ${styles.img_bg}`}></div>
                 <img
-                  src="./img/man.png"
+                  src="./img/MG8.jpg"
                   alt="megalaw"
-                  className="img-fluid mw-80"
+                  className="img-fluid w-75 h-100"
                 />
               </div>
             </div>
@@ -289,7 +289,7 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-        <div className="container py-5" data-aos="fade-up">
+        {/* <div className="container py-5" data-aos="fade-up">
           <div className="row">
             <div className="col-lg-6">
               <h3 className="poppins-bold">What Our Clients Say</h3>
@@ -303,7 +303,7 @@ export default function Home({ posts }) {
           <div className={styles.testimonial}>
             <Testimonial />
           </div>
-        </div>
+        </div> */}
         <div></div>
       </section>
 

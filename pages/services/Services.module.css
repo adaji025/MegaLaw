@@ -40,6 +40,7 @@
           align-items: center;
           justify-content: center;
       }
+     
   }
   @media (max-width:768px) {
     .services {
@@ -49,4 +50,12 @@
     .our_services {
         font-size: 44px;
     } 
+  }
+  @media (max-width: 500px) {
+    .our_services {
+        font-size: 20px ;
+    }
+    .services_text {
+        font-size: 16px !important;
+    }
   }

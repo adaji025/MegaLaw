@@ -2,26 +2,26 @@ export const Teams = [
     {
         name: 'Mohammed Ndgana',
         title: 'Principal Partner',
-        image: './img/man.png'
+        image: './img/muhammed-ndagana.png'
     },
     {
         name: 'Yakubu Maryam',
         title: 'Associate',
-        image: './img/man.png'
+        image: './img/maryam-yakubu.png'
     },
     {
         name: 'Aisha Yusuf',
         title: 'Associate',
-        image: './img/man.png'
+        image: './img/obi-joseph.png'
     },
     {
         name: 'Obi Joseph Akogwu',
         title: 'Associate',
-        image: './img/man.png'
+        image: './img/aisha-yusuf.png'
     },
     {
         name: 'Auta Friday',
         title: 'Associate',
-        image: './img/man.png'
+        image: './img/auta-friday.png'
     }
 ]

@@ -95,9 +95,9 @@ const About = () => {
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
                     <div className={styles.img_bg}></div>
                     <img
-                      src="./img/man.png"
+                      src="./img/our-vision.png"
                       alt="megalaw"
-                      className={`px-2 ${styles.img}`}
+                      className={`img-fluid px-2 ${styles.img}`}
                     />
                   </div>
                 </div>
@@ -115,9 +115,9 @@ const About = () => {
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
                     <div className={` ${styles.img_bg}`}></div>
                     <img
-                      src="./img/man.png"
+                      src="./img/megalaw-group.png"
                       alt="megalaw"
-                      className={`px-2 ${styles.img}`}
+                      className={`img-fluid px-2 ${styles.img}`}
                     />
                   </div>
                 </div>
