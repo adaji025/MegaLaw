@@ -65,7 +65,7 @@ const Footer = () => {
                     </Link>
                   </Col>
                   <Col md={8}>
-                    <h5 className=" text-white poppins-bold pb-3">Address</h5>
+                    <h5 className=" text-white poppins-bold pb-3 mr-3">Address</h5>
                     <p className="text-secondary poppins-medium">
                       Email Address: megalawpartners@outlook.com
                     </p>
@@ -73,6 +73,7 @@ const Footer = () => {
                       Office Address: B2/B3 Peniel Albarka Plaza, Opposite High
                       Court, Minna, Niger State.
                     </p>
+                    <p className="text-secondary poppins-medium"> <span className="pr-5">Phone Number: </span> +234 907 254 7346</p>
                   </Col>
                 </Row>
               </Container>
