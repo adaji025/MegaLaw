@@ -51,8 +51,9 @@ export default function Home({ posts }) {
 
       <section className={styles.heroContainer}>
         <Navbar />
+
         <div className="container d-flex align-items-center h_60">
-          <div className="row justify-content-center align-items-center">
+          <div className="row justify-content-center align-items-center mt-5 pb-5">
             <div className="col-md-6">
               <div className="container">
                 <div className="row align-items-center">
@@ -96,7 +97,7 @@ export default function Home({ posts }) {
             </div>
             <div className="col-md-6 d-grid">
               <div className={styles.megalaw_bg} data-aos="zoom-out">
-                <img src="./img/mega.png" alt="" className="img-fluid"/>
+                <img src="./img/mega.png" alt="" className="img-fluid" />
               </div>
               {/* <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
                 <img src="./img/second-lady.png" alt="megalaw" className={styles.one} />
