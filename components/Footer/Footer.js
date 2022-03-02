@@ -69,11 +69,12 @@ const Footer = () => {
                     <p className="text-secondary poppins-medium">
                       Email Address: megalawpartners@outlook.com
                     </p>
+                    <p className="text-secondary poppins-medium"> <span className="pr-5">Phone Number: </span> +234 907 254 7346</p>
                     <p className="text-secondary poppins-medium">
                       Office Address: B2/B3 Peniel Albarka Plaza, Opposite High
                       Court, Minna, Niger State.
                     </p>
-                    <p className="text-secondary poppins-medium"> <span className="pr-5">Phone Number: </span> +234 907 254 7346</p>
+                   
                   </Col>
                 </Row>
               </Container>
