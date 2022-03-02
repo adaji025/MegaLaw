@@ -52,8 +52,8 @@ export default function Home({ posts }) {
       <section className={styles.heroContainer}>
         <Navbar />
 
-        <div className="container d-flex align-items-center h_60">
-          <div className="row justify-content-center align-items-center mt-5 pb-5">
+        <div className="container d-flex align-items-center h_60 z-1">
+          <div className="row justify-content-center align-items-center mt-5 pb-5 z-1 ">
             <div className="col-md-6">
               <div className="container">
                 <div className="row align-items-center">

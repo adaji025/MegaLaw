@@ -36,7 +36,7 @@ const Navbar = ({ textColor }) => {
   
 
   return (
-    <div>
+    <div className='navContainer'>
       <nav className={navBg? 'container navbarItems scrollBg' : 'container navbarItems' }>
         <div className={` logo pb-2 `}>
           <span className={navBg ? `scrollColor ${checkColor} mega` : ` ${checkColor} mega`}>Mega</span>

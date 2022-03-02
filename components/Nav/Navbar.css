@@ -1,3 +1,6 @@
+.navContainer {
+  z-index: 100 !important;
+}
 .navbarItems {
     background: transparent;
     height: 120px;
@@ -5,7 +8,7 @@
     /* justify-content: center; */
     align-items: center;
     font: normal normal medium 14px/24px GT Walsheim Pro;
-    z-index: 20 !important;
+
 }
 .logo {
     color: white;
@@ -47,6 +50,8 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    z-index: 100 !important;
   }
   .navLink:hover {
     color: var(--mega-law-tomato);
