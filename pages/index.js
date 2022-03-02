@@ -52,9 +52,9 @@ export default function Home({ posts }) {
       <section className={styles.heroContainer}>
         <Navbar />
 
-        <div className="container d-flex align-items-center h_60 z-1">
-          <div className="row justify-content-center align-items-center mt-5 pb-5 z-1 ">
-            <div className="col-md-6">
+        <div className="container d-flex align-items-center h_60">
+          <div className="row justify-content-center align-items-center mt-5 pb-5  ">
+            <div className="col-md-6 mt-5">
               <div className="container">
                 <div className="row align-items-center">
                   <div className={`col-lg-11 text-white ${styles.welcome}`}>
@@ -77,7 +77,7 @@ export default function Home({ posts }) {
                       onClick={() => setIsOpen(true)}
                       data-aos="flip-right"
                     >
-                      <div className="d-flex justify-content-between align-items-center">
+                      <div className="d-flex justify-content-between align-items-center z-20">
                         <div className="text-start">
                           <span
                             className={`d-block opacity-50 poppins-medium ${styles.got_issue}`}
@@ -116,8 +116,8 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <div className="container text-center pt-5 mt-4 switch">
-          <img src="./img/switch-icon.svg" alt="switch" className="img-fluid" />
+        <div className="container text-center pt-5 mt-4 switch z-1">
+          <img src="./img/switch-icon.svg" alt="switch" className="img-fluid z-1" />
         </div>
       </section>
       <section id="practices" className={styles.practices}>
