@@ -105,17 +105,17 @@
         cursor: pointer;
         z-index: 10;
     }
-    /* .nav-menu {
+    .nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 900px;
+        /* min-height: 100vh; */
         position: absolute;
         top: 100px;
         left: -120%;
         opacity: 1;
         transition: all 0.5s ease;
-      } */
+      }
       .nav-menu.active {
         background: var(--mega-law-ash);
         left: 0;
