@@ -4,6 +4,8 @@
   --mega-law-dark: #0a0f14;
   --mega-law-tomato: #ff5057;
   --mega-law-ash: #f0f0f0;
+  --mt22: 22rem;
+  --mt15: 15rem;
 }
 * {
   margin: 0;
@@ -61,6 +63,7 @@ a {
 }
 .switch {
   cursor: pointer;
+  margin-top: -30px;
 }
 #tsparticles canvas {
   position: absolute !important;
@@ -85,7 +88,7 @@ a {
   height: 60px !important;
 }
 .z-1 {
-  z-index: -1 !important;
+  z-index: 1 !important;
 }
 .z-20 {
   z-index: 20 !important;

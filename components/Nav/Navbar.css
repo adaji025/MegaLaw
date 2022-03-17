@@ -1,5 +1,5 @@
 .navContainer {
-  z-index: 100 !important;
+  z-index: 1000 !important;
 }
 .navbarItems {
     background: transparent;

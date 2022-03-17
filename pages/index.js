@@ -48,13 +48,13 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+ 
+      <section className={`${styles.heroContainer}`}>
+       <Navbar />
 
-      <section className={styles.heroContainer}>
-        <Navbar />
-
-        <div className="container d-flex align-items-center h_60">
-          <div className="row justify-content-center align-items-center mt-5 pb-5  ">
-            <div className="col-md-6 mt-5">
+        <div className="container d-flex align-items-center  z-1">
+          <div className="row justify-content-center align-items-center pb-5  ">
+            <div className="col-md-6">
               <div className="container">
                 <div className="row align-items-center">
                   <div className={`col-lg-11 text-white ${styles.welcome}`}>
@@ -95,28 +95,14 @@ export default function Home({ posts }) {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 d-grid">
+            <div className="col-md-6">
               <div className={styles.megalaw_bg} data-aos="zoom-out">
-                <img src="./img/mega.png" alt="" className="img-fluid" />
+                <img src="./img/partners.png" alt="" className="img-fluid" />
               </div>
-              {/* <div className={`skew ${styles.home_img}`} data-aos="zoom-out">
-                <img src="./img/second-lady.png" alt="megalaw" className={styles.one} />
-                <img src="./img/man-1.png" alt="megalaw" className={styles.two} />
-                <img
-                  src="./img/first-lady.png"
-                  alt="megalaw"
-                  className={styles.three}
-                />
-                <img
-                  src="./img/muhammed-ndagana.png"
-                  alt="megalaw"
-                  className={styles.four}
-                />
-              </div> */}
             </div>
           </div>
         </div>
-        <div className="container text-center pt-5 mt-4 switch z-1">
+        <div className="container text-center mt-n4 switch z-1">
           <img src="./img/switch-icon.svg" alt="switch" className="img-fluid z-1" />
         </div>
       </section>
