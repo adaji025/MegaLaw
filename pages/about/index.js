@@ -86,12 +86,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container over-flow-x-hidden">
         <div className="row  align-items-center">
           <div className="col-xl-11">
             <div className="container">
-              <div className="row my-5" data-aos="fade-in">
-                <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start">
+              <div className="row my-5">
+                <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start" data-aos="fade-down">
                   <div className=" ps-lg-5 mb-5 mb-lg-0">
                     {/* <div className={styles.img_bg}></div> */}
                     <img
@@ -101,7 +101,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center"  data-aos="fade-left">
                   <h3 className="poppins-bold">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
                     Our utmost goal is to serve our client with integrity and
@@ -110,7 +110,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="row my-5" data-aos="fade-in">
+              <div className="row my-5" data-aos="fade-up">
                 <div className="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
                     {/* <div className={` ${styles.img_bg}`}></div> */}
@@ -121,7 +121,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1  ps-lg-5">
+                <div className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1  ps-lg-5"  data-aos="fade-right">
                   <h3 className="poppins-bold">Our vision</h3>
                   <p className="poppins-medium opacity-50">
                   We are devoted to providing excellent customer service and
