@@ -230,7 +230,7 @@ export default function Home({ posts }) {
                 <img
                   src="./img/MG8.jpg"
                   alt="megalaw"
-                  className="img-fluid custome-w-75 h-100"
+                  className="img-fluid custome-w-75 w-100 h-100"
                 />
               </div>
             </div>
