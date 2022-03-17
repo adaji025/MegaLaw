@@ -87,21 +87,21 @@ const About = () => {
       </div>
 
       <div className="container">
-        <div className="row">
+        <div className="row  align-items-center">
           <div className="col-xl-11">
             <div className="container">
-              <div className="row mb-3" data-aos="fade-in">
+              <div className="row my-5" data-aos="fade-in">
                 <div className="col-lg-6 d-flex justify-content-center justify-content-lg-start">
-                  <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
-                    <div className={styles.img_bg}></div>
+                  <div className=" ps-lg-5 mb-5 mb-lg-0">
+                    {/* <div className={styles.img_bg}></div> */}
                     <img
                       src="./img/our-vision.png"
                       alt="megalaw"
-                      className={`img-fluid px-2 ${styles.img}`}
+                      className={`img-fluid px-2`}
                     />
                   </div>
                 </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center">
+                <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                   <h3 className="poppins-bold">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
                     Our utmost goal is to serve our client with integrity and
@@ -110,14 +110,14 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="row" data-aos="fade-in">
+              <div className="row my-5" data-aos="fade-in">
                 <div className="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end">
                   <div className="position-relative ps-lg-5 mb-5 mb-lg-0">
-                    <div className={` ${styles.img_bg}`}></div>
+                    {/* <div className={` ${styles.img_bg}`}></div> */}
                     <img
                       src="./img/megalaw-group.png"
                       alt="megalaw"
-                      className={`img-fluid px-2 ${styles.img}`}
+                      className={`img-fluid px-2 `}
                     />
                   </div>
                 </div>
