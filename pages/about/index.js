@@ -27,7 +27,7 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 1000,
+      duration: 700,
     });
   }, []);
 

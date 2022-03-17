@@ -22,7 +22,7 @@ export default function Home({ posts }) {
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration: 1000,
+      duration: 500,
     });
   }, []);
 
