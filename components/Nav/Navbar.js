@@ -38,7 +38,7 @@ const Navbar = ({ textColor }) => {
   return (
     <div className='navContainer'>
       <nav className={navBg? 'container navbarItems scrollBg' : 'container navbarItems' }>
-        <div className={` logo pb-2 `}>
+        <div className={` logo pb-2 `} onClick={() => router.push('/')}>
           <span className={navBg ? `scrollColor ${checkColor} mega` : ` ${checkColor} mega`}>Mega</span>
           <span className={` law `}>Law</span>
           <span className={navBg ? `scrollColor d-block partners ${checkColor}` : ` d-block partners ${checkColor}` }>Partners</span>
