@@ -102,6 +102,9 @@ a {
   .our-services-height {
     height: 200px;
   }
+  .switch {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .nmt-2 {
