@@ -97,7 +97,7 @@ export default function Home({ posts }) {
             </div>
             <div className="col-md-6">
               <div className={styles.megalaw_bg} data-aos="zoom-out">
-                <img src="./img/partners.png" alt="" className="img-fluid" />
+                <img src="./img/mega.png" alt="" className="img-fluid" />
               </div>
             </div>
           </div>
