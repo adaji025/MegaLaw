@@ -12,12 +12,12 @@ export const Teams = [
     {
         name: 'Aisha Yusuf',
         title: 'Associate',
-        image: './img/obi-joseph.png'
+        image: './img/aisha-yusuf.png'
     },
     {
         name: 'Obi Joseph Akogwu',
         title: 'Associate',
-        image: './img/aisha-yusuf.png'
+        image: './img/obi-joseph.png'
     },
     {
         name: 'Auta Friday',

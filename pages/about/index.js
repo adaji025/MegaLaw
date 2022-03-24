@@ -102,10 +102,10 @@ const About = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center overflow-x-hidden"  data-aos="fade-left">
-                  <h3 className="poppins-bold">Our Mission</h3>
+                  <h3 className="poppins-bold text-start">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
                     Our utmost goal is to serve our client with integrity and
-                    professionalism to exceed your expectations and become the
+                    professionalism to exceed expectations and become the
                     reference point in legal consultancy and advocay in Nigeria
                   </p>
                 </div>
@@ -143,10 +143,10 @@ const About = () => {
         <div className="row ps-xl-5">
           <div className="col-md-6">
             <h3 className="poppins-bold">Our Team</h3>
-            <p className="poppins-medium opacity-50 pb-2">
+            {/* <p className="poppins-medium opacity-50 pb-2">
               But I Must Explain To You How All This Mistaken Idea Of Denouncing
               Pleasure And Praising Pain Was Born And I Will Give You A Complete
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="row ps-xl-3 d-none d-sm-flex">

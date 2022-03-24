@@ -77,7 +77,7 @@ const Services = () => {
                 <div className="col-md-6 col-lg-4 py-2">
                   <div className={styles.card} data-aos="fade-down">
                     <p className="pt-3 poppins-bold text-center">
-                      Confirmation of Authenticity of Documents
+                      Drafting of Commercial Agreement
                     </p>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Services = () => {
                 <div className="col-md-6 col-lg-5 py-2">
                   <div className={styles.card} data-aos="fade-right">
                     <p className="pt-3 poppins-bold">
-                      Advocacy/Representation in court
+                      Consultancy and Company Secretary
                     </p>
                   </div>
                 </div>
@@ -132,6 +132,15 @@ const Services = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+              <div className="row justify-content-center py-4" data-aos='zoom-out'>
+              <div className="col-md-6">
+                <div className={`${styles.card}`}>
+                  <p className="pt-3 poppins-bold">
+                    Transactions at Corprate Affairs Commision
+                  </p>
+                </div>
+              </div>
               </div>
             </div>
           </div>
