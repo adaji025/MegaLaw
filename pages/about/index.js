@@ -101,7 +101,7 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center overflow-x-hidden"  data-aos="fade-left">
+                <div className="col-lg-6 d-flex flex-column justify-content-center overflow-x-hidden"  data-aos="fade-left">
                   <h3 className="poppins-bold text-start">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
                     Our utmost goal is to serve our client with integrity and
