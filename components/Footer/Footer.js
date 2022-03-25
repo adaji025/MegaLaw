@@ -71,7 +71,7 @@ const Footer = () => {
                     </p>
                     <p className="text-secondary poppins-medium"> <span className="pr-5">Phone Number: </span> +234 907 254 7346</p>
                     <p className="text-secondary poppins-medium">
-                      Office Address: Suite B2/B3 Peniel Albarka Plaza, Opposite High
+                      Office Address: Suite B2/B3 Peniel Albarka Plaza, Opposite Federal High
                       Court, Minna, Niger State.
                     </p>
                    
