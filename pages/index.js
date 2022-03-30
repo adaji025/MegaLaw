@@ -3,7 +3,7 @@ import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
-import {  Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Nav/Navbar";
@@ -17,8 +17,7 @@ import Modal from "../components/modal/Modal";
 
 export default function Home({ posts }) {
   // const [isOpen, setIsOpen] = useState(false);
-  const [openModal, setOpenModal] = useState(false)
-  
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -49,9 +48,9 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
- {openModal && <Modal setOpenModal={setOpenModal} />}
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       <section className={`${styles.heroContainer}`}>
-       <Navbar setOpenModal={setOpenModal} />
+        <Navbar setOpenModal={setOpenModal} />
 
         <div className="container d-flex align-items-center  z-1">
           <div className="row justify-content-center align-items-center pb-5  ">
@@ -104,7 +103,11 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div className="container text-center mt-n4 switch z-1">
-          <img src="./img/switch-icon.svg" alt="switch" className="img-fluid z-1" />
+          <img
+            src="./img/switch-icon.svg"
+            alt="switch"
+            className="img-fluid z-1"
+          />
         </div>
       </section>
       <section id="practices" className={styles.practices}>
@@ -339,7 +342,6 @@ export default function Home({ posts }) {
           </div>
         </div>
       </section>
-
 
       <Footer />
     </div>

@@ -22,45 +22,9 @@
   /* background: #2B2325;
   padding: 5px; */
 }
-/* .home_img {
-  background-color: rgba(85, 21, 9, 0.712);
-  position: relative;
-  margin-top: 300px;
-  width: 80vw;
- z-index: -1;
-} */
-
-/* .home_img img {
-  max-width: 50%;
-  width: 350px;
-} */
-/* .home_img img.one {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  margin-left: 20px;
-  margin-top: -20px;
-} */
-
-/* .home_img img.two {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 4;
-  margin-right: -20px;
-  margin-top: -20px;
-} */
-/* .home_img img.three {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-} */
-/* .home_img img.four {
-  position: absolute;
-  left: 0;
-  bottom: 0%;
-} */
+.heroContainer img {
+  transform: scale(.9);
+}
 .practices,
 .client,
 .blog {
@@ -136,11 +100,11 @@
     height: 500px;
   }
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .megalaw_bg {
     margin-top: 50px;
   }
-}
+} */
 @media (max-width: 768px) {
   .heroContainer {
     height: 105vh;
