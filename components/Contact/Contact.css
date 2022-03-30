@@ -1,11 +1,13 @@
+.parent {
+  z-index: 1000 !important;
+}
 .z-modal {
   position: fixed;
   top: 0;
   left: 0;
-  height: 75vh;
+  min-height: 75vh;
   width: 50vw;
   transform: translate(45%, 15%);
-  z-index: 1000;
 
 }
 

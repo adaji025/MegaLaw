@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import styles from "./About.module.css";
 import Navbar from "../../components/Nav/Navbar";
-import Contact from "../../components/Contact/Contact";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Slider from "react-slick";
@@ -10,9 +10,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Teams } from "../../utils/Teams";
 import Team from "../../components/Team/Team";
+import Modal from "../../components/modal/Modal";
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false)
 
   let settings_sm = {
     dot: true,
@@ -33,8 +35,9 @@ const About = () => {
 
   return (
     <div className={styles.hero}>
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       <div className={styles.aboutHero}>
-        <Navbar />
+        <Navbar  setOpenModal={setOpenModal}  />
         <div className={styles.aboutHero_1}>
           <div className="container">
             <div className="row justify-content-center">
@@ -66,7 +69,7 @@ const About = () => {
             </p>
             <button
               className={`d-block btn text-white ${styles.btn}`}
-              onClick={() => setIsOpen(true)}
+              onClick={() => setOpenModal(true)}
             >
               <div className="d-flex justify-content-between align-items-center">
                 <div className="text-start">
@@ -186,16 +189,6 @@ const About = () => {
               );
             })}
           </Slider>
-        </div>
-      </div>
-      {/* modal */}
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-12">
-            <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)} />
-            </div>
-          </div>
         </div>
       </div>
       <Footer />

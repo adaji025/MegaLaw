@@ -1,23 +1,24 @@
 import Head from "next/head";
-import Link from "next/link";
 import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer/Footer";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import {  Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Nav/Navbar";
-import Contact from "../components/Contact/Contact";
+
 import { useRouter } from "next/router";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BlogPost from "../components/BlogPost/BlogPost";
-import Testimonial from "../components/Testimonial/Testimonial";
+import Modal from "../components/modal/Modal";
 
 export default function Home({ posts }) {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false)
+  
 
   useEffect(() => {
     AOS.init({
@@ -48,9 +49,9 @@ export default function Home({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
- 
+ {openModal && <Modal setOpenModal={setOpenModal} />}
       <section className={`${styles.heroContainer}`}>
-       <Navbar />
+       <Navbar setOpenModal={setOpenModal} />
 
         <div className="container d-flex align-items-center  z-1">
           <div className="row justify-content-center align-items-center pb-5  ">
@@ -74,7 +75,7 @@ export default function Home({ posts }) {
                     </span>
                     <button
                       className={`d-block mt-3 btn text-white ${styles.btn}`}
-                      onClick={() => setIsOpen(true)}
+                      onClick={() => setOpenModal(true)}
                       data-aos="flip-right"
                     >
                       <div className="d-flex justify-content-between align-items-center z-20">
@@ -256,7 +257,7 @@ export default function Home({ posts }) {
               </a>
               <button
                 className={`d-block btn text-white ${styles.btn}`}
-                onClick={() => setIsOpen(true)}
+                onClick={() => setOpenModal(true)}
               >
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="text-start">
@@ -338,15 +339,7 @@ export default function Home({ posts }) {
           </div>
         </div>
       </section>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-12">
-            <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)} />
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <Footer />
     </div>

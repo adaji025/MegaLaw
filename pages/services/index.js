@@ -4,7 +4,8 @@ import "aos/dist/aos.css";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
 import styles from "./Services.module.css";
-import Contact from "../../components/Contact/Contact";
+import Modal from "../../components/modal/Modal";
+
 
 const Services = () => {
   useEffect(() => {
@@ -14,11 +15,12 @@ const Services = () => {
     });
   }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className={styles.container}>
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       <div className={styles.services}>
-        <Navbar />
+        <Navbar setOpenModal={setOpenModal} />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 py-2">
@@ -151,22 +153,12 @@ const Services = () => {
         <a
           href="#"
           className={`btn text-white poppins-bold px-5 py-3 ${styles.btn}`}
-          onClick={() => setIsOpen(true)}
+          onClick={() => setOpenModal(true)}
         >
           Consult us
         </a>
       </div>
 
-      {/* modal */}
-      <div className="container">
-        {/* <div className="row justify-content-center">
-          <div className="col-md-12"> */}
-        <div>
-          <Contact open={isOpen} close={() => setIsOpen(false)} />
-        </div>
-        {/* </div>
-        </div> */}
-      </div>
       <Footer />
     </div>
   );

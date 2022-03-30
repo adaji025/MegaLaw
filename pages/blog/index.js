@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,9 +10,11 @@ import { Blog as blog } from "../../utils/Blog";
 import BlogPost from "../../components/BlogPost/BlogPost";
 import { API_URL } from "../../config/constant";
 import FeaturedPost from "../../components/FeaturedPost/FeaturedPost";
+import Modal from "../../components/modal/Modal";
 
 const Blog = ({ posts }) => {
   const router = useRouter();
+  const [openModal, setOpenModal] = useState(false)
 
   let settings_sm = {
     dot: true,
@@ -31,7 +33,8 @@ const Blog = ({ posts }) => {
   console.log(latestPost);
   return (
     <div>
-      <Navbar textColor="megaDark" />
+      <Navbar textColor="megaDark"  setOpenModal={setOpenModal}  />
+      {openModal && <Modal setOpenModal={setOpenModal} />}
       <div className="container py-5">
         <div className="row jusify-content-center align-items-center">
          <FeaturedPost title={latestPost.attributes.title}

@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Contact from "../Contact/Contact";
+
 import { MenuItems } from "./MenuItems";
 
-const Navbar = ({ textColor }) => {
+const Navbar = ({ textColor, setOpenModal }) => {
   const [clicked, setClicked] = useState(false);
   const [navBg, setNavBg] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -82,20 +82,10 @@ const Navbar = ({ textColor }) => {
             <span className="text-secondary">&copy; 2021 Megalaw Partners</span>
           </div>
         </ul>
-        <button className={`btn poppins-medium text-white nav-btn`} onClick={() => setIsOpen(true)}>Contact Us</button>
+        <button className={`btn poppins-medium text-white nav-btn`} onClick={() => setOpenModal(true)}>Contact Us</button>
       </nav>
 
-      {/* modal */}
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-12">
-            <div>
-              <Contact open={isOpen} close={() => setIsOpen(false)}/>
-            </div>
-           
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };

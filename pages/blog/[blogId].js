@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
@@ -8,15 +8,17 @@ import styles from "../../styles/SinglePost.module.css";
 import BlogPost from "../../components/BlogPost/BlogPost";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import Modal from "../../components/modal/Modal";
 
 
 
 const Post = ({ post, posts }) => {
-
+  const [openModal, setOpenModal] = useState(false)
   const router = useRouter();
   return (
     <div>
-      <Navbar textColor="megaDark" />
+      {openModal && <Modal setOpenModal={setOpenModal} />}
+      <Navbar textColor="megaDark"  setOpenModal={setOpenModal} />
       <div className="container py-5">
         <div className="row">
           <div className="col-xl-11">
