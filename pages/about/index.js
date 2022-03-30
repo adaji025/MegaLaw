@@ -155,10 +155,10 @@ const About = () => {
         <div className="row ps-xl-3 d-none d-sm-flex">
           <div className="col-md-11">
             <div className="container">
-              <div className="row">
+              <div className="row justify-content-center">
                 {Teams.map((team, i) => {
                   return (
-                    <div className="col-md-6 col-lg-3 py-3" key={i}>
+                    <div className="col-md-6 col-lg-4 py-3" key={i}>
                       <Team team={team} />
                     </div>
                   );
