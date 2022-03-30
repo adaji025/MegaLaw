@@ -145,14 +145,14 @@ const About = () => {
       <div className="container my-5 py-5  overflow-x-hidden" data-aos="fade-in">
         <div className="row ps-xl-5">
           <div className="col-md-6">
-            <h3 className="poppins-bold">Our Team</h3>
+            <h3 className="poppins-bold ms-md-5">Our Team</h3>
             {/* <p className="poppins-medium opacity-50 pb-2">
               But I Must Explain To You How All This Mistaken Idea Of Denouncing
               Pleasure And Praising Pain Was Born And I Will Give You A Complete
             </p> */}
           </div>
         </div>
-        <div className="row ps-xl-3 d-none d-sm-flex">
+        <div className="row ps-xl-3 d-none d-sm-flex justify-content-center">
           <div className="col-md-11">
             <div className="container">
               <div className="row justify-content-center">
