@@ -57,9 +57,10 @@ const Navbar = ({ textColor, setOpenModal }) => {
                 <Link href={item.url}>
                 <a
                  
-                  className={navBg ? `poppins-medium scrollColor ${checkColor} ${item.cName}`: `poppins-medium ${checkColor} ${item.cName}` }
+                  className={navBg ? `poppins-medium scrollColor ${checkColor} ${item.cName}`: `poppins-medium ${checkColor} ${item.cName} ${router.pathname===item.url && 'activeNav'}` }
                   target={item.target}
                 >
+                  {console.log(router.pathname)}
                   {item.title}
                 </a>
                 </Link>

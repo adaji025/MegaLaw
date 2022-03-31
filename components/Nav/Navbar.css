@@ -10,6 +10,9 @@
     font: normal normal medium 14px/24px GT Walsheim Pro;
 
 }
+.activeNav {
+  color: var(--mega-law-tomato) !important;
+}
 .logo {
     color: white;
     font-family: "Poppins", sans-serif;
