@@ -137,7 +137,7 @@ export default function Home({ posts }) {
                       <div className="card-body">
                         <h5 className="poppins-bold">Property Law Practice</h5>
                         <p className="poppins-medium opacity-50">
-                          Our property law experts have a wide variety of
+                          Our property law experts have a wide range of
                           experience and skill in delivering targeted business
                           advice on all areas of commercial and residential
                           property transactions. We also have great experience
@@ -162,10 +162,8 @@ export default function Home({ posts }) {
                           Corporate & Commercial Law
                         </h5>
                         <p className="poppins-medium opacity-50">
-                          We can help with a wide range of transactions and
-                          corporate finance because of our significant knowledge
-                          and expertise. We offer corporate consultancy services
-                          to domestic businesses in nigeria.
+                         We offer corporate consultancy services
+                          to businesses both locally and internationally.
                         </p>
                       </div>
                     </div>
@@ -183,7 +181,7 @@ export default function Home({ posts }) {
                       <div className="card-body">
                         <h5 className="poppins-bold">Litigation</h5>
                         <p className="poppins-medium opacity-50">
-                          Litigation We make every effort to prevent problems
+                          We make every effort to prevent problems
                           and utilize litigation only as a last resort, thanks
                           to our familiarity with the clients business. Our
                           litigation expertise includes employment, debt
@@ -244,7 +242,7 @@ export default function Home({ posts }) {
               </h3>
               <p className="mega-law-muted poppins-medium">
                 {" "}
-                We are devoted to providing excellent customer service and
+                We are devoted to providing excellent clients services and
                 building long term connections. Our main objective is to serve
                 our clients with high quality and efficient services. We offer
                 not just competent legal advice but also effective business

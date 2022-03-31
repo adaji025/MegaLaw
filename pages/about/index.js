@@ -57,13 +57,13 @@ const About = () => {
             <p className="opacity-50 poppins-medium">
               Megalaw Partners is a firm registered under the companies and
               Allied Matters Act with Registeration Number BN3157638. The Firm
-              is established by Barrister Muhammed Ndagana Muhammd (Principal
-              Patner), a legal Practioner that was called to the Nigerian Bar
-              over a decade ago and has been in active practice since then
+              was established by Barrister Muhammed Ndagana Muhammd (Principal
+              Partner), a legal Practioner that was called to the Nigerian Bar
+              over a decade ago and has been in active legal practice since then
             </p>
             <p className="opacity-50 poppins-medium">
               We are full-service Law Firm that Capitalizes on its skilled
-              professionals and technology to provived excellent legal services
+              professionals and technology to provide excellent legal services
               to its client
               
             </p>
@@ -107,7 +107,7 @@ const About = () => {
                 <div className="col-lg-6 d-flex flex-column justify-content-center overflow-x-hidden"  data-aos="fade-left">
                   <h3 className="poppins-bold text-start">Our Mission</h3>
                   <p className="poppins-medium opacity-50" data-aos="fade-in">
-                    Our utmost goal is to serve our client with integrity and
+                    Our utmost goal is to serve our clients with integrity and
                     professionalism to exceed expectations and become the
                     reference point in legal consultancy and advocay in Nigeria
                   </p>
@@ -131,7 +131,7 @@ const About = () => {
                 building long term connections. Our main objective is to serve
                 our clients with high quality and efficient services. We offer
                 not just competent legal advice but also effective business
-                solutions relevant to our customers individual circumstances
+                solutions relevant to our clients individual circumstances
                 because of our specialization in practice areas and industrial
                 sectors.
                   </p>

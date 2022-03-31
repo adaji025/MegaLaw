@@ -36,9 +36,9 @@ const Services = () => {
                       <p
                         className={`fs-5 ps-md-2 poppins-medium text-white text-center text-md-start ${styles.services_text}`}
                       >
-                        At Megalaw, we provide legal advice and counsel; our
-                        knowledge allows us to devise winning tactics for issues
-                        behalf of our clients. We give concise, accurate and
+                        At Megalaw, we provide legal representation and consultancy services, our
+                        knowledge allow us to devise winning tactics for issues
+                        on behalf of our clients. We give concise, accurate and
                         intelligent solutions by cutting through challenges.
                       </p>
                     </div>
@@ -58,14 +58,15 @@ const Services = () => {
           <div className="col-xl-11">
             <div className="container">
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-11">
                   <h4 className="poppins-bold">
                     We provide our services in the following areas
                   </h4>
                   <p className="poppins-medium opacity-50">
-                    Select an area you need our expertise and go ahead to tell
-                    us briefly about your issue…
-                  </p>
+                    We have lawyers with years of experience and advocacy skills that are capable of representing our client in all cadres of Court
+                    in Nigeria and even internationally. 
+                    Our Lawyers are also members of the Nigerian Bar Association
+                  </p> 
                 </div>
               </div>
               <div className="row justify-content-center">
