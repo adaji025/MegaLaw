@@ -117,8 +117,8 @@ export default function Home({ posts }) {
               <h2 className="pb-2 px-2 poppins-bold">Our Practices</h2>
               <p className="mega-law-muted poppins-medium px-2">
                 Our industry strengths at Megalaw include; property law,
-                corporate and commercial, arbitration and mediation,
-                litigation, consultancy and company secretary.
+                corporate and commercial, arbitration and mediation, litigation,
+                consultancy and company secretary.
               </p>
             </Col>
             <Col md={7}>
@@ -162,8 +162,8 @@ export default function Home({ posts }) {
                           Corporate & Commercial Law
                         </h5>
                         <p className="poppins-medium opacity-50">
-                         We offer corporate consultancy services
-                          to businesses both locally and internationally.
+                          We offer corporate consultancy services to businesses
+                          both locally and internationally.
                         </p>
                       </div>
                     </div>
@@ -181,10 +181,14 @@ export default function Home({ posts }) {
                       <div className="card-body">
                         <h5 className="poppins-bold">Litigation</h5>
                         <p className="poppins-medium opacity-50">
-                          We make every effort to prevent problems
-                          and utilize litigation only as a last resort. We
-                          have certified and experienced members that can
-                          represent you in any Nigerian court.
+                          We have lawyers with years of experience and advocacy
+                          skills, that are capable of representing our clients
+                          in all cadres of courts in Nigeria and even
+                          internationally. Our Lawyers are also members of the
+                          Nigerian Bar Association. We make every effort to
+                          prevent problems and utilize litigation only as a last
+                          resort. We have certified and experienced members that
+                          can represent you in any Nigerian court.
                         </p>
                       </div>
                     </div>
