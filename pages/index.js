@@ -117,8 +117,8 @@ export default function Home({ posts }) {
               <h2 className="pb-2 px-2 poppins-bold">Our Practices</h2>
               <p className="mega-law-muted poppins-medium px-2">
                 Our industry strengths at Megalaw include; property law,
-                corporate and commercial, arbitration and mediation and
-                litigation.
+                corporate and commercial, arbitration and mediation,
+                litigation, consultancy and company secretary.
               </p>
             </Col>
             <Col md={7}>
@@ -182,10 +182,7 @@ export default function Home({ posts }) {
                         <h5 className="poppins-bold">Litigation</h5>
                         <p className="poppins-medium opacity-50">
                           We make every effort to prevent problems
-                          and utilize litigation only as a last resort, thanks
-                          to our familiarity with the clients business. Our
-                          litigation expertise includes employment, debt
-                          collection, banking and finance, and other fields. We
+                          and utilize litigation only as a last resort. We
                           have certified and experienced members that can
                           represent you in any Nigerian court.
                         </p>
