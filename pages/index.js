@@ -163,7 +163,8 @@ export default function Home({ posts }) {
                         </h5>
                         <p className="poppins-medium opacity-50">
                           We offer corporate consultancy services to businesses
-                          both locally and internationally.
+                          both locally and internationally. We Offer company
+                          secretary services, post incorporation services and more.
                         </p>
                       </div>
                     </div>

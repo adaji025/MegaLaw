@@ -1,6 +1,6 @@
 export const Teams = [
     {
-        name: 'Mohammed Ndgana',
+        name: 'Mohammed Ndagana',
         title: 'Principal Partner',
         image: './img/muhammed-ndagana.png'
     },
